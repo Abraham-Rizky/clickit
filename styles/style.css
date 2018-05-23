@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* This wildcard applies to all elements ensuring a box layout model */
 
 /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
