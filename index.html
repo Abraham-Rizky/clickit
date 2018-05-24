@@ -13,8 +13,8 @@
 <body>
     <header>
         <!--Website Icon-->
-            <img class="site-icon" src="images/Logo.png">
-            <h2 class="">(702) CLICKIT</h2>
+        <img class="site-icon" src="images/Logo.png">
+        <h2 class="header-phone">(702) CLICKIT</h2>
     </header>
 
     <!--Nav Bar-->
@@ -34,10 +34,12 @@
 
     <main>
         <!--Landing Area-->
-        <div class="landing-page">
-            <h1>Web Design and Development</h1>
-            <h3>We'll develop and design your web site so it looked great on all screen sizes</h3>
-            <h3>and turns more visitors into real customers</h3>
+        <div class="landing-page-wrapper">
+            <div class="landing-page-div">
+                <h1>Web Design and Development</h1>
+                <h3>We'll develop and design your web site so it looked great on all screen sizes</h3>
+                <h3>and turns more visitors into real customers</h3>
+            </div>
         </div>
     </main>
     <footer>
@@ -45,6 +47,10 @@
     <script>
         function myFunction(x) {
             x.classList.toggle("change");
+        }
+
+        function toggleHam() {
+            document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
         }
     </script>
 </body>

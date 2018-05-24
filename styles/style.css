@@ -12,11 +12,10 @@ ul {
 /*Hamburger button*/
 
 .container {
-    display: inline-block;
-    cursor: pointer;
     position: absolute;
     top: 1%;
     right: 2%;
+    z-index: 6;
 }
 
 .bar1,
@@ -43,25 +42,78 @@ ul {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/*--------------------------------*/
+/*------------Header and Nav--------------------*/
 
 .site-icon {
     margin: 1% 1%;
 }
 
+.header-phone {
+    margin: 1% 1%;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation li {
+    display: none;
+    padding: 2%;
+    white-space: nowrap;
+}
+
+.navigation li a {}
+
+.navigation.responsive {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+}
+
+.navigation.responsive li {
+    display: flex;
+    background-color: red;
+    width: 100%;
+
+}
+
+.navigation.responsive li:hover {}
+
+.navigation.responsive li a {
+    text-decoration: none;
+}
+
+/*--------------Landing page wordings------------------*/
+.landing-page-wrapper{
+    text-align: center;
+    position: relative;
+}
+.landing-page-div{
+    position: absolute;
+
+}
 /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
 
 @media only screen and (min-width: 37.5em) {
     .container {
         display: none;
     }
+    .navigation li {
+        display: flex;
+    }
 }
 
 /* Only CSS rules that need to be changed to meet the LARGE layout go in here */
 
 @media only screen and (min-width: 64em) {
-    header{
+    header {
         display: flex !important;
         justify-content: space-between;
     }
+
 }
