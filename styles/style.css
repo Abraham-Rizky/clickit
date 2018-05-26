@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-family:'Bitter',serif;
 }
 
 ul {
@@ -97,6 +98,185 @@ ul {
     position: absolute;
 
 }
+
+/*--------------Clickit About Us------------------*/
+.clickit-about{
+  /*Remove once header is finished */ padding-top: 300px;
+  width:80vw;
+  margin:0 auto;
+  text-align: center;
+}
+.clickit-about h1{
+  font-size:3em;
+  color:#F26522;
+}
+
+/*--------------What We Do------------------*/
+.what-we-do-container{
+  font-family: 'Lato',sans-serif;
+  background-color:#244381;
+  color:white;
+}
+
+#what-we-do-header{
+  text-align:center;
+  font-size: 3em;
+  font-family: 'Bitter', serif;
+  padding:60px 0;
+}
+.box{
+  text-align:center;
+}
+
+.box .icon{
+  color:#F26522;
+}
+
+.box h3{
+  font-size:1.8em;
+}
+
+.box p{
+  width:80vw;
+  margin:0 auto;
+}
+
+.box p:last-of-type{
+  color:#F26522;
+  padding:20px 0px 40px;
+  font-weight:600;
+}
+
+/*--------------Testimonials------------------*/
+.testimonials-container{
+  text-align:center;
+}
+
+.testimonials-container h1{
+  color:#F26522;
+  font-size:3em;
+  padding:60px 0;
+}
+
+.testimonial-box .testimonial-para{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  width:80vw;
+  margin:auto;
+}
+
+/*--------------Some Of Our Clients------------------*/
+.clients-container{
+  background-color:#244381;
+  text-align:center;
+  color:white;
+  padding-bottom:60px;
+}
+
+.clients-container h1{
+  font-size:3em;
+  padding:60px 30px;
+  margin:auto;
+}
+
+.clients-container p{
+  font-family: 'Lato', sans-serif;
+  width:80vw;
+  margin:auto;
+}
+/*--------------Contact Form Section------------------*/
+/*----- Contact Us info ------*/
+.contact-us-container{
+  background-color:#100B61;
+  margin:0;
+  text-align: left;
+  padding-bottom:20%;
+}
+.contact-us-box{
+  width:80vw;
+  margin:auto;
+}
+.contact-us-box h1{
+  color:white;
+  font-size: 3em;
+  padding:60px 0 20px;
+  margin:0;
+}
+
+.contact-info{
+  color:#F26522;
+}
+.social-media-icons{
+}
+.media-box{
+  width:30px;
+  height:30px;
+  color:white;
+  display: inline-block;
+  border: 1px solid black;
+  background-color:#F26522;
+  border-radius: 50%;
+  text-align: center;
+  padding-top:6px;
+}
+
+/*----- Contact Us form ------*/
+.form-container{
+  background-color:#100B61;
+}
+form{
+  width:80vw;
+  margin:auto;
+}
+
+form label{
+  color:white;
+}
+form input[type=text]{
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    margin-bottom: 5px;
+    color:#F26522;
+    width:inherit;
+}
+form input:last-of-type{
+
+}
+form input::placeholder{
+  color:rgba(242,101,34,0.8);
+}
+form textarea{
+  background-color:inherit;
+  border:none;
+  border-bottom:1px solid white;
+  width:inherit;
+  color:#F26522;
+  margin-top:10px;
+}
+
+form textarea::placeholder{
+  color:rgba(242,101,34,0.8);
+}
+
+form button[type=submit]{
+  width:80%;
+  background-color:#E82F0C;
+  padding:5px;
+  margin: 10px auto;
+  border-radius:3px;
+  border:none;
+
+}
+
+
+    /*     background-color: inherit;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-left: 5px;
+    margin-bottom: 5px;  */
+
 /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
 
 @media only screen and (min-width: 37.5em) {
