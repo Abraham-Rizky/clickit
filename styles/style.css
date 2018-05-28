@@ -67,32 +67,44 @@ ul {
     padding-left: 0;
     width: 100%;
     text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    margin: 0 auto;
+
 }
 
 .navigation li {
     display: none;
     padding: 2%;
     white-space: nowrap;
+
 }
 
 .navigation li a {}
 
 .navigation.responsive {
     position: absolute;
-    top: 0;
+    top: 7%;
     right: 0;
     width: 75%;
     height: 100%;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation.responsive li {
     display: flex;
-    background-color: red;
+    background-color: black;
     width: 100%;
 
 }
 
-.navigation.responsive li:hover {}
+.navigation.responsive li:hover {
+    background-color: gray;
+    cursor: pointer;
+}
 
 .navigation.responsive li a {
     text-decoration: none;
@@ -107,8 +119,11 @@ ul {
 
 .landing-page-div {
     position: absolute;
-    margin-top: 50%;
-    margin-bottom: 50%;
+    max-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+    margin-top: 30%;
+    padding: 1% 1%;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -332,6 +347,9 @@ form button[type=submit] {
         margin-right: 2%;
         top: 0;
     }
+    .landing-page-div {
+        margin-top: 15%;
+    }
 }
 
 /* Only CSS rules that need to be changed to meet the LARGE layout go in here */
@@ -341,6 +359,8 @@ form button[type=submit] {
         display: flex !important;
         justify-content: space-between;
     }
-
+    .landing-page-div {
+        margin-top: 15%;
+    }
 
 }
