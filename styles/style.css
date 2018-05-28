@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    font-family:'Bitter',serif;
+    font-family: 'Bitter', serif;
 }
 
 ul {
@@ -90,41 +90,47 @@ ul {
 }
 
 /*--------------Landing page wordings------------------*/
-.landing-page-wrapper{
+
+.landing-page-wrapper {
     text-align: center;
     position: relative;
 }
-.landing-page-div{
-}
+
+.landing-page-div {}
 
 /*--------------Clickit About Us------------------*/
-.clickit-about{
-  /*Remove once header is finished */ padding-top: 300px;
-  width:80vw;
-  margin:0 auto;
-  text-align: center;
+
+.clickit-about {
+    /*Remove once header is finished */
+    padding-top: 300px;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
 }
-.clickit-about h1{
-  font-size:3em;
-  color:#F26522;
+
+.clickit-about h1 {
+    font-size: 3em;
+    color: #F26522;
 }
 
 /*--------------What We Do------------------*/
-.what-we-do-container{
-  font-family: 'Lato',sans-serif;
-  background-color:#244381;
-  color:white;
+
+.what-we-do-container {
+    font-family: 'Lato', sans-serif;
+    background-color: #244381;
+    color: white;
     padding: 1% 1%;
 }
 
-#what-we-do-header{
-  text-align:center;
-  font-size: 3em;
-  font-family: 'Bitter', serif;
-  padding:60px 0;
+#what-we-do-header {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Bitter', serif;
+    padding: 60px 0;
 }
-.box{
-  text-align:center;
+
+.box {
+    text-align: center;
     padding: 1% 1%;
     border: 1px solid white;
     margin: 8% 5%;
@@ -132,156 +138,175 @@ ul {
     border-radius: 18px;
 }
 
-.box .icon{
-  color:#F26522;
+.box .icon {
+    color: #F26522;
 }
 
-.box h3{
-  font-size:1.8em;
+.box h3 {
+    font-size: 1.8em;
 }
 
-.box p{
-  margin:0 auto;
+.box p {
+    margin: 0 auto;
 }
 
-.box p:last-of-type{
-  color:#F26522;
-  padding:20px 0px 40px;
-  font-weight:600;
+.box p:last-of-type {
+    color: #F26522;
+    padding: 20px 0px 40px;
+    font-weight: 600;
 }
-.services-container{
+
+.services-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*--------------Testimonials------------------*/
-.testimonials-container{
-  text-align:center;
+
+.testimonials-container {
+    text-align: center;
 }
 
-.testimonials-container h1{
-  color:#F26522;
-  font-size:3em;
-  padding:60px 0;
+.testimonials-container h1 {
+    color: #F26522;
+    font-size: 3em;
+    padding: 60px 0;
 }
 
-.testimonial-box .testimonial-para{
-  font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
-  width:80vw;
-  margin:auto;
+.testimonial-box .testimonial-para {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    width: 80vw;
+    margin: auto;
 }
 
 /*--------------Some Of Our Clients------------------*/
-.clients-container{
-  background-color:#244381;
-  text-align:center;
-  color:white;
-  padding-bottom:60px;
+
+.clients-container {
+    background-color: #244381;
+    text-align: center;
+    color: white;
+    padding-bottom: 60px;
 }
 
-.clients-container h1{
-  font-size:3em;
-  padding:60px 30px;
-  margin:auto;
+.clients-container h1 {
+    font-size: 3em;
+    padding: 60px 30px;
+    margin: auto;
 }
 
-.clients-container p{
-  font-family: 'Lato', sans-serif;
-  width:80vw;
-  margin:auto;
+.clients-container p {
+    font-family: 'Lato', sans-serif;
+    width: 80vw;
+    margin: auto;
 }
-.clients-container .client-logo img{
-  width:200px;
-  padding: 7% 0 3%;
+
+.clients-container .client-logo img {
+    width: 200px;
+    padding: 7% 0 3%;
 }
+
 /*--------------Contact Form Section------------------*/
+
 /*----- Contact Us info ------*/
-.contact-us-container{
-  background-color:#100B61;
-  margin:0;
-  text-align: left;
-  padding-bottom:20%;
-}
-.contact-us-box{
-  width:80vw;
-  margin:auto;
-}
-.contact-us-box h1{
-  color:white;
-  font-size: 3em;
-  padding-top: 20%;
-  margin:0;
+
+.contact-us-container {
+    background-color: #100B61;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 20%;
 }
 
-.contact-info{
-  color:#F26522;
+.contact-us-box {
+    width: 80vw;
+    margin: auto;
 }
-.social-media-icons{
+
+.contact-us-box h1 {
+    color: white;
+    font-size: 3em;
+    padding-top: 20%;
+    margin: 0;
 }
-.media-box{
-  width:30px;
-  height:30px;
-  color:white;
-  display: inline-block;
-  border: 1px solid black;
-  background-color:#F26522;
-  border-radius: 50%;
-  text-align: center;
-  padding-top:6px;
+
+.contact-info {
+    color: #F26522;
+}
+
+.social-media-icons {}
+
+.media-box {
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: inline-block;
+    border: 1px solid black;
+    background-color: #F26522;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 6px;
 }
 
 /*----- Contact Us form ------*/
-.form-container{
-  background-color:#100B61;
-}
-form{
-  width:80vw;
-  margin:auto;
+
+.form-container {
+    background-color: #100B61;
 }
 
-form label{
-  color:white;
+form {
+    width: 80vw;
+    margin: auto;
 }
-form input[type=text]{
+
+form label {
+    color: white;
+}
+
+form input[type=text] {
     background: inherit;
     border: none;
     border-bottom: 1px solid white;
     display: inline-block;
     margin-bottom: 5px;
-    color:#F26522;
-    width:inherit;
-}
-form input:last-of-type{
-
-}
-form input::placeholder{
-  color:rgba(242,101,34,0.8);
-}
-form textarea{
-  background-color:inherit;
-  border:none;
-  border-bottom:1px solid white;
-  width:inherit;
-  color:#F26522;
-  margin-top:10px;
+    color: #F26522;
+    width: inherit;
 }
 
-form textarea::placeholder{
-  color:rgba(242,101,34,0.8);
+form input:last-of-type {}
+
+form input::placeholder {
+    color: rgba(242, 101, 34, 0.8);
 }
 
-form button[type=submit]{
-  width:80%;
-  background-color:#E82F0C;
-  padding:5px;
-  margin: 10px auto;
-  border-radius:3px;
-  border:none;
+form textarea {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid white;
+    width: inherit;
+    color: #F26522;
+    margin-top: 10px;
+}
+
+form textarea::placeholder {
+    color: rgba(242, 101, 34, 0.8);
+}
+
+form button[type=submit] {
+    width: 80%;
+    background-color: #E82F0C;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 3px;
+    border: none;
 
 }
-#homepage-form{
+
+#homepage-form {
     padding-top: 20%;
+}
+
+#homepage-form input {
+    margin-bottom: 2%;
 }
 
 
@@ -290,57 +315,55 @@ form button[type=submit]{
     border-bottom: 1px solid white;
     margin-left: 5px;
     margin-bottom: 5px;  */
-
-/* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
-
-@media only screen and (min-width: 37.5em) {
-    .container {
-        display: none;
-    }
-    .navigation li {
-        display: flex;
-    }
-    /*--------------Some of our clients--------------------*/
-    .client-box-container{
-      display:flex;
-      flex-flow:row nowrap;
-      justify-content: space-around;
-      align-items: flex-start;
-      padding:0 4%;
-    }
-    .client-box p {
-      width:100%;
-      font-size: 0.9em;
-      padding:5%;
-    }
-    /*--------------Contact--------------------*/
-    .contact-container{
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      width: 100%;
-      align-items: center;
-      height: 100%;
-    }
-    .contact-us-container{
-      width: 90%;
-      padding-left: 5%;
-      height: 100vh;
-    }
-    .contact-us-box{
-      width:100%;
-      margin:auto;
-    }
-    .form-container{
-      width:100%;
-      height:100%;
-    }
-    form{
-      width: 95%;
-      margin: auto;
-      height: 100vh;
-      padding-top: 20%;
-    }
+    /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
+    @media only screen and (min-width: 37.5em) {
+        .container {
+            display: none;
+        }
+        .navigation li {
+            display: flex;
+        }
+        /*--------------Some of our clients--------------------*/
+        .client-box-container {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 0 4%;
+        }
+        .client-box p {
+            width: 100%;
+            font-size: 0.9em;
+            padding: 5%;
+        }
+        /*--------------Contact--------------------*/
+        .contact-container {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            height: 100%;
+        }
+        .contact-us-container {
+            width: 90%;
+            padding-left: 5%;
+            height: 100vh;
+        }
+        .contact-us-box {
+            width: 100%;
+            margin: auto;
+        }
+        .form-container {
+            width: 100%;
+            height: 100%;
+        }
+        form {
+            width: 95%;
+            margin: auto;
+            height: 100vh;
+            padding-top: 20%;
+        }
     }
 }
 
