@@ -362,7 +362,6 @@ form button[type=submit] {
     border-bottom: 1px solid white;
     margin-left: 5px;
     margin-bottom: 5px;  */
-<<<<<<< HEAD
     /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
     @media only screen and (min-width: 37.5em) {
         .container {
@@ -436,30 +435,6 @@ form button[type=submit] {
             height: 100vh;
             padding-top: 20%;
         }
-=======
-
-/* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
-
-@media only screen and (min-width: 37.5em) {
-    .container {
-        display: none;
-    }
-    .navigation li {
-        display: flex;
-    }
-    /*--------------Some of our clients--------------------*/
-    .client-box-container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: 0 4%;
-    }
-    .client-box p {
-        width: 100%;
-        font-size: 0.9em;
-        padding: 5%;
->>>>>>> 4acefcd1debeb64b4184d620c166818b9778d407
     }
     /*--------------Contact--------------------*/
     .contact-container {
