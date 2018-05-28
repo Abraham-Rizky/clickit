@@ -291,7 +291,18 @@ form button[type=submit]{
         display: flex;
     }
     /*--------------Some of our clients--------------------*/
-
+    .client-box-container{
+      display:flex;
+      flex-flow:row nowrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding:0 4%;
+    }
+    .client-box p {
+      width:100%;
+      font-size: 0.9em;
+      padding:5%;
+    }
     /*--------------Contact--------------------*/
     .contact-container{
       display: flex;
