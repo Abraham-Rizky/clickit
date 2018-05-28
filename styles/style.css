@@ -95,8 +95,6 @@ ul {
     position: relative;
 }
 .landing-page-div{
-    position: absolute;
-
 }
 
 /*--------------Clickit About Us------------------*/
@@ -116,6 +114,7 @@ ul {
   font-family: 'Lato',sans-serif;
   background-color:#244381;
   color:white;
+    padding: 1% 1%;
 }
 
 #what-we-do-header{
@@ -126,6 +125,11 @@ ul {
 }
 .box{
   text-align:center;
+    padding: 1% 1%;
+    border: 1px solid white;
+    margin: 8% 5%;
+    background-color: #3B57A6;
+    border-radius: 18px;
 }
 
 .box .icon{
@@ -137,7 +141,6 @@ ul {
 }
 
 .box p{
-  width:80vw;
   margin:0 auto;
 }
 
@@ -145,6 +148,10 @@ ul {
   color:#F26522;
   padding:20px 0px 40px;
   font-weight:600;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*--------------Testimonials------------------*/
