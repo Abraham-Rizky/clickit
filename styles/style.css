@@ -51,10 +51,15 @@ ul {
 
 .site-icon {
     margin: 1% 1%;
+    position: absolute;
+    z-index: 1;
 }
 
 .header-phone {
-    margin: 1% 1%;
+    z-index: 1;
+    position: absolute;
+    top: 13%;
+    margin-left: 1%
 }
 
 .navigation {
@@ -102,6 +107,8 @@ ul {
 
 .landing-page-div {
     position: absolute;
+    margin-top: 50%;
+    margin-bottom: 50%;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -318,6 +325,13 @@ form button[type=submit] {
     .navigation li {
         display: flex;
     }
+    .header-phone {
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        margin-right: 2%;
+        top: 0;
+    }
 }
 
 /* Only CSS rules that need to be changed to meet the LARGE layout go in here */
@@ -327,5 +341,6 @@ form button[type=submit] {
         display: flex !important;
         justify-content: space-between;
     }
+
 
 }
