@@ -223,7 +223,7 @@ ul {
     background: #244381;
 }
 
-.clients-container:before {
+/*.clients-container:before {
     transform: skewY(5deg);
     background-color: red;
     width: 100%;
@@ -235,7 +235,7 @@ ul {
     z-index: -12;
     background-color: #244381;
 }
-
+*/
 .clients-container > div {
     transform: skewY(5deg);
 }
