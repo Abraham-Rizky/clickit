@@ -247,19 +247,6 @@ ul {
     padding-bottom: 10%;
 }
 
-/*.clients-container:before {
-    transform: skewY(5deg);
-    background-color: red;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -11%;
-    left: 0;
-    content: '';
-    z-index: -12;
-    background-color: #244381;
-}
-*/
 .clients-container > div {
     transform: skewY(5deg);
 }
@@ -327,6 +314,14 @@ ul {
 
 .contact-info {
     color: #F26522;
+}
+.contact-info p {
+  padding-bottom:0.4em;
+  font-family: 'Lato', sans-serif;
+  font-size:0.9em;
+}
+.footer-icon{
+  padding-right:5px;
 }
 
 .media-box {
@@ -411,6 +406,32 @@ form button[type=submit] {
     border: none;
 
 }
+/*----------------Footer----------------*/
+.footer{
+  width:100%;
+  background-color:#100B61;
+  padding-bottom:0.8em;
+}
+.footer ul{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+  display:flex;
+  justify-content: center;
+}
+.footer ul li a{
+  font-size:0.7em;
+  color:white;
+  text-decoration: none;
+  padding-left:0.5em;
+  padding-right:0.5em;
+}
+#copyright {
+  color:white;
+  padding-top:0.9em;
+  font-family: 'Lato',sans-serif;
+  font-size:0.6em;
+}
 
 #homepage-form {
     padding-top: 20%;
@@ -418,28 +439,6 @@ form button[type=submit] {
 
 #homepage-form input {
     margin-bottom: 2%;
-}
-
-/*jssor slider loading skin spin css*/
-
-.jssorl-009-spin img {
-    animation-name: jssorl-009-spin;
-    animation-duration: 1.6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-#jssor_1 {
-    margin-bottom: 5%;
-}
-
-@keyframes jssorl-009-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
     /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
@@ -476,86 +475,84 @@ form button[type=submit] {
         display: flex;
         flex-flow: row-reverse nowrap;
         padding: 0 13%;
-    }
-    .testimonial-box:last-of-type {
-        margin-bottom: 10px;
-    }
-    #reversed-testimonial {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    .client-img p {
-        margin: 0;
-        padding: 0;
-    }
-    .testimonial-box p:first-child {
-        margin-top: 10px;
-    }
-    .testimonial-box p:last-child {
-        margin-bottom: 20px;
-    }
-    .testimonial-para {
-        width: 98%;
-        padding-left: 2%;
-    }
-    #reversed-testimonial .testimonial-para {
-        width: 98%;
-        padding-right: 2%;
-    }
-    /*--------------Some of our clients--------------------*/
-    .client-box-container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: 0 4%;
-    }
-    .client-box p {
-        width: 100%;
-        font-size: 0.9em;
-        padding: 5%;
-    }
-    /*--------------Contact--------------------*/
-    .contact-container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-        height: 100vh;
-    }
-    .contact-us-container {
-        width: 90%;
-        padding-left: 5%;
-        height: 100vh;
-    }
-    .contact-us-box {
-        width: 100%;
-        margin: auto;
-    }
-    .form-container {
-        width: 100%;
-        height: 100%;
-    }
-    form {
-        width: 95%;
-        margin: auto;
-        height: 100vh;
-        padding-top: 20%;
-    }
-    form button[type=submit]{
-      width:95%;
-    }
-
-}
+      }
+      .testimonial-box:last-of-type {
+          margin-bottom: 10px;
+      }
+      #reversed-testimonial {
+          display: flex;
+          flex-flow: row nowrap;
+      }
+      .client-img p {
+          margin: 0;
+          padding: 0;
+      }
+      .testimonial-box p:first-child {
+          margin-top: 10px;
+      }
+      .testimonial-box p:last-child {
+          margin-bottom: 20px;
+      }
+      .testimonial-para {
+          width: 98%;
+          padding-left: 2%;
+      }
+      #reversed-testimonial .testimonial-para {
+          width: 98%;
+          padding-right: 2%;
+      }
+      /*--------------Some of our clients--------------------*/
+      .client-box-container {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-around;
+          align-items: flex-start;
+          padding: 0 4%;
+      }
+      .client-box p {
+          width: 100%;
+          font-size: 0.9em;
+          padding: 5%;
+      }
+      /*--------------Contact--------------------*/
+      .contact-container {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          width: 100%;
+          align-items: center;
+          background-color: #100B61;
+      }
+      .contact-us-container {
+          width: 90%;
+          padding-left: 5%;
+      }
+      .contact-us-box {
+          width: 100%;
+          margin: auto;
+      }
+      .form-container {
+          width: 100%;
+          height: 100%;
+      }
+      form {
+          width: 95%;
+          margin: auto;
+          /* height: 100vh; */
+          padding-top: 20%;
+      }
+      form button[type=submit]{
+        width:95%;
+      }
+  }
 
 
-/* Only CSS rules that need to be changed to meet the LARGE layout go in here */
+  /* Only CSS rules that need to be changed to meet the LARGE layout go in here */
 
-@media only screen and (min-width: 64em) {
-    header {
-        display: flex !important;
-        justify-content: space-between;
-    }
+  @media only screen and (min-width: 64em) {
+      header {
+          display: flex !important;
+          justify-content: space-between;
+      }
 
-}
+  }
