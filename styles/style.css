@@ -144,10 +144,24 @@ ul {
     margin: 8% 5%;
     background-color: #3B57A6;
     border-radius: 18px;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
 }
 
 .box .icon {
     color: #F26522;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 2%;
+    font-size: 0.8em;
+}
+
+.box-readmore {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .box h3 {
@@ -156,6 +170,7 @@ ul {
 
 .box p {
     margin: 0 auto;
+    vertical-align: middle;
 }
 
 .box p:last-of-type {
@@ -236,6 +251,7 @@ ul {
     background-color: #244381;
 }
 */
+
 .clients-container > div {
     transform: skewY(5deg);
 }
@@ -429,10 +445,13 @@ form button[type=submit] {
         margin: 3%;
         background-color: #3B57A6;
         border-radius: 8px;
+
     }
     .services-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
     }
     /*--------------Testimonials--------------------*/
     .testimonial-box {
