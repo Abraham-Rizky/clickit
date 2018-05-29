@@ -203,6 +203,10 @@ ul {
 }
 
 /*--------------Some Of Our Clients------------------*/
+.clients-box{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
 .client-heading{
     text-align: center;
     font-size: 1.5em;
