@@ -137,6 +137,13 @@ ul {
 .box {
     text-align: center;
     padding: 1% 1%;
+<<<<<<< HEAD
+=======
+    margin: 8% 5%;
+    background-color: #3B57A6;
+    border-radius: 18px;
+    box-shadow:
+>>>>>>> 1f4e12371f16426ec5baae111ccd5addf5e1a96a
 }
 
 .box .icon {
@@ -195,6 +202,10 @@ ul {
 }
 
 /*--------------Some Of Our Clients------------------*/
+.clients-box{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
 .client-heading{
     text-align: center;
     font-size: 1.5em;
