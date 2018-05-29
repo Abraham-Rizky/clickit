@@ -11,47 +11,6 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        jssor_1_slider_init = function() {
-
-            var jssor_1_options = {
-                $AutoPlay: 1,
-                $Idle: 0,
-                $SlideDuration: 5000,
-                $SlideEasing: $Jease$.$Linear,
-                $PauseOnHover: 4,
-                $SlideWidth: 140,
-                $Align: 0
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 980;
-
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                } else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>
 </head>
 
 <body>
@@ -100,56 +59,50 @@
                 <div class="box google-tour-box">
                     <div class="icon">
                         <i class="fas fa-map-marker-alt fa-4x"></i>
-                        <h3>Google Virtual Tours</h3>
                     </div>
-                    <p></p>
+                    <h3>Google Virtual Tours</h3>
                     <p>A 360-degree view of your business, available directly from Google Maps</p>
-                    <p class="box-readmore">Read More</p>
+                    <p>Read More</p>
                 </div>
                 <div class="box 4k-video-box">
                     <div class="icon">
                         <i class="fas fa-video fa-4x"></i>
-                        <h3>4K Videography</h3>
                     </div>
-                    <p></p>
+                    <h3>4K Videography</h3>
                     <p>Is there a better way to showcase your business or event?</p>
-                    <p class="box-readmore">Read More</p>
+                    <p>Read More</p>
                 </div>
                 <div class="box social-media-box">
                     <div class="icon">
                         <i class="fas fa-users fa-4x"></i>
-                        <h3>Social Media</h3>
                     </div>
-                    <p></p>
+                    <h3>Social Media Management</h3>
                     <p>Let us create the buzz for your company and improve your image.</p>
-                    <p class="box-readmore">Read More</p>
+                    <p>Read More</p>
                 </div>
                 <div class="box seo-box">
                     <div class="icon">
                         <i class="fab fa-searchengin fa-4x"></i>
-                        <h3>SEO</h3>
                     </div>
-                    <p></p>
+                    <h3>Search Engine Optimization</h3>
                     <p>Let our experts take the hassle and confusion away and get you results!</p>
-                    <p class="box-readmore">Read More</p>
+                    <p>Read More</p>
                 </div>
                 <div class="box web-dev-box">
                     <div class="icon">
                         <i class="fas fa-code fa-4x"></i>
-                        <h3>Web Development</h3>
                     </div>
-                    <p></p>
+                    <h3>Web Development</h3>
                     <p>Let us develop a Web site that converts visitors into profits.</p>
-                    <p class="box-readmore">Read More</p>
+                    <p>Read More</p>
                 </div>
                 <div class="box graphic-box">
                     <div class="icon">
                         <i class="fas fa-paint-brush fa-4x"></i>
-                        <h3>Graphic Design</h3>
                     </div>
-                    <p></p>
+                    <h3>Graphic Design</h3>
                     <p>A strong brand starts with your business logo.</p>
-                    <p class="box-readmore">Read More</p>
+                    <p>Read More</p>
                 </div>
             </div>
         </div>

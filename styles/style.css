@@ -141,30 +141,10 @@ ul {
 .box {
     text-align: center;
     padding: 1% 1%;
-<<<<<<< HEAD
-    margin: 8% 5%;
-    background-color: #3B57A6;
-    border-radius: 18px;
-    display: grid;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
-=======
->>>>>>> ce69d6c7fdca5663fba7974c647b1f52c9051706
 }
 
 .box .icon {
     color: #F26522;
-}
-
-.icon {
-    display: flex;
-    justify-content: space-between;
-    padding: 2% 2%;
-    font-size: 0.8em;
-}
-
-.box-readmore {
-    display: flex;
-    justify-content: flex-start;
 }
 
 .box h3 {
@@ -173,7 +153,6 @@ ul {
 
 .box p {
     margin: 0 auto;
-    vertical-align: middle;
 }
 
 .box p:last-of-type {
@@ -254,7 +233,6 @@ ul {
     background-color: #244381;
 }
 */
-
 .clients-container > div {
     transform: skewY(5deg);
 }
@@ -284,6 +262,22 @@ ul {
 /*--------------Contact Form Section------------------*/
 
 /*----- Contact Us info ------*/
+.contact-container{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.contact-container:before{
+  position:absolute;
+  content:'';
+  height:100%;
+  width:100%;
+  background-color: #100B61;
+  transform:skewY(-5deg);
+  top:-12%;
+  left:0;
+  z-index:-10;
+}
 
 .contact-us-container {
     background-color: #100B61;
@@ -321,6 +315,21 @@ ul {
 }
 
 /*----- Contact Us form ------*/
+.contact-container{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.contact-container:before{
+  position:absolute;
+  content:'';
+  height:100%;
+  width:100%;
+  background-color: #100B61;
+  transform:skewY(-5deg);
+  top:-12%;
+  left:0;
+  z-index:-10;
 }
 
 .form-container {
@@ -367,6 +376,7 @@ form textarea::placeholder {
 }
 
 form button[type=submit] {
+    width: 100%;
     background-color: #E82F0C;
     padding: 5px;
     margin: 10px auto;
@@ -405,44 +415,38 @@ form button[type=submit] {
     }
 }
 
-<<<<<<< HEAD
-/* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
+    /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
+    @media only screen and (min-width: 37.5em) {
+        /*--------------Landing Area------------------ */
+        .container {
+            display: none;
+        }
+        .navigation li {
+            display: flex;
+        }
+        .header-phone {
+            margin: 1% 1%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        /*--------------What We Do------------------ */
+        .what-we-do-container{
+          padding:0 3% 2%;
 
-@media only screen and (min-width: 37.5em) {
-    /*--------------Landing Area------------------ */
-    .container {
-        display: none;
-    }
-    .navigation li {
-        display: flex;
-    }
-    .header-phone {
-        margin: 1% 1%;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    /*--------------What We Do------------------ */
-    .what-we-do-container {
-        padding: 0 3% 2%;
-
-    }
-    .box {
-        margin: 3%;
-        background-color: #3B57A6;
-        border-radius: 8px;
-
-    }
-    .services-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 90%;
-        margin: 0 auto;
-    }
-    /*--------------Testimonials--------------------*/
-    .testimonial-box {
-=======
->>>>>>> ce69d6c7fdca5663fba7974c647b1f52c9051706
+        }
+        .box{
+          border: 1px solid white;
+          margin:3%;
+          background-color: #3B57A6;
+          border-radius: 8px;
+        }
+        .services-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        /*--------------Testimonials--------------------*/
+        .testimonial-box{
         display: flex;
         flex-flow: row-reverse nowrap;
         padding: 0 13%;
