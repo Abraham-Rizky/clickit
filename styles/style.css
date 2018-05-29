@@ -137,10 +137,10 @@ ul {
 .box {
     text-align: center;
     padding: 1% 1%;
-    border: 1px solid white;
     margin: 8% 5%;
     background-color: #3B57A6;
     border-radius: 18px;
+    box-shadow:
 }
 
 .box .icon {
