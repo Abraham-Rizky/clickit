@@ -132,6 +132,9 @@ ul {
       text-decoration: none;
   }
   
+  .ul-other-pages li a{
+      color: #E82F0C;
+  }
   /*--------------Landing page wordings------------------*/
   
   .landing-page-wrapper {
