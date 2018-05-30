@@ -132,6 +132,9 @@ ul {
       text-decoration: none;
   }
   
+  .ul-other-pages li a{
+      color: #E82F0C;
+  }
   /*--------------Landing page wordings------------------*/
   
   .landing-page-wrapper {
@@ -298,6 +301,7 @@ ul {
     transform: skewY(-5deg);
     background: #244381;
     padding-bottom: 10%;
+    padding-top: 3%
 }
 
 .clients-container > div {
@@ -306,7 +310,6 @@ ul {
 
 .clients-container > h1 {
     transform: skewY(5deg);
-
 }
 
 .clients-container h1 {
