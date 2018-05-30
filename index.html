@@ -16,37 +16,49 @@
 
 <body>
     <header class="landing-page-wrapper">
-    <!--Nav Bar-->
-    <div class="wrapper">
-      <nav class="navigation">
-          <div class="container" onclick="myFunction(this); toggleHam();">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-          </div>
-          <div class="site-icon" >
-            <img src="images/Logo.png">
-          </div>
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-          <h2 class="navigation-phone">(702) CLICKIT</h2>
-      </nav>
-    </div>
+        <!--Nav Bar-->
+        <div class="wrapper">
+            <nav class="navigation">
+                <div class="container" onclick="myFunction(this); toggleHam();">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="site-icon">
+                    <img src="images/Logo.png">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <h2 class="navigation-phone">(702) CLICKIT</h2>
+            </nav>
+        </div>
 
-    <!--Landing Area-->
-    <div >
-      <video src="videos/clickit-intro.mp4" autoplay loop></video>
-      <div class="landing-page-text-container">
-        <h1>Web Design and Development</h1>
-        <h3>We'll develop and design your web site so it looked great on all screen sizes</h3>
-        <h3>and turns more visitors into real customers</h3>
-      </div>
-    </div>
-</header>
+        <!--Landing Area-->
+        <div>
+            <!-- <video src="videos/clickit-intro.mp4" autoplay loop preload="auto"></video> -->
+            <!-- The video -->
+            <video autoplay muted loop id="myVideo">
+                <source src="videos/clickit-intro.mp4" type="video/mp4">
+            </video>
+            <div class="landing-page-text-container">
+                <h1>Web Design and Development</h1>
+                <h3>We'll develop and design your web site so it looked great on all screen sizes</h3>
+                <h3>and turns more visitors into real customers</h3>
+            </div>
+        </div>
+    </header>
 
     <main>
         <!-- Clickit Social About Us -->
@@ -114,7 +126,7 @@
                 </div>
             </div>
         </div>
-       <!-- Testimonials -->
+        <!-- Testimonials -->
         <div class="testimonials-container">
             <h1>Testimonials</h1>
             <div class="testimonial-box">
@@ -188,9 +200,12 @@
                 <div class="contact-us-box">
                     <h1>Contact Us</h1>
                     <div class="contact-info">
-                        <p><i class="footer-icon fas fa-location-arrow"></i> 5375, Unit A, Cameron St, Las Vegas, NV 89118</p>
-                        <p><i class="footer-icon fas fa-phone"></i> (702) 254-2548</p>
-                        <p><i class="footer-icon fas fa-envelope"></i> Email here</p>
+                        <p>
+                            <i class="footer-icon fas fa-location-arrow"></i> 5375, Unit A, Cameron St, Las Vegas, NV 89118</p>
+                        <p>
+                            <i class="footer-icon fas fa-phone"></i> (702) 254-2548</p>
+                        <p>
+                            <i class="footer-icon fas fa-envelope"></i> Email here</p>
                     </div>
                     <div class="social-media-icons">
                         <div class="media-box">
@@ -243,15 +258,23 @@
         </div>
 
         <div class="footer">
-          <ul>
-            <li><a href="">Terms of Use</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Careers</a></li>
-          </ul>
-          <ul id="copyright">
-            <li>&copy;Clickit Social</li>
-          </ul>
+            <ul>
+                <li>
+                    <a href="">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+                <li>
+                    <a href="">Careers</a>
+                </li>
+            </ul>
+            <ul id="copyright">
+                <li>&copy;Clickit Social</li>
+            </ul>
         </div>
     </footer>
     <script>
