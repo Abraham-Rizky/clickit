@@ -493,6 +493,17 @@ form button[type=submit] {
     margin-bottom: 2%;
 }
 
+
+/*------------------About Us Page Styles-----------------*/
+.about-us-container{
+    width:100%;
+    background-color:#100B61;
+    color:white;
+}
+.about-us-container h1{
+    color:#F26522;
+}
+
     /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
     @media only screen and (min-width: 37.5em) {
         /*--------------Landing Area------------------ */
