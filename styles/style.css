@@ -431,7 +431,6 @@ form input[type=text] {
     width: inherit;
 }
 
-form input:last-of-type {}
 
 form input::placeholder {
     color: rgba(242, 101, 34, 0.8);
