@@ -5,9 +5,10 @@
     font-family: 'Bitter', serif;
 }
 
-footer{
+footer {
     margin-top: 5%;
 }
+
 ul {
     list-style-type: none;
     display: flex;
@@ -146,6 +147,7 @@ ul {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 .landing-page-text-container {
   position: absolute;
   top: 30%;
@@ -162,6 +164,15 @@ ul {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+=======
+.landing-page-div {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+>>>>>>> 3ce1b9a0e90691764b703a394d13e116055b4d46
 }
 
 /*--------------Clickit About Us------------------*/
@@ -186,8 +197,34 @@ ul {
     background-color: #244381;
     color: white;
     padding: 1% 1%;
+    position: relative;
 }
 
+.what-we-do-container:before {
+    transform: skewY(-5deg);
+    background-color: red;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    z-index: -12;
+    background-color: #244381;
+}
+
+.what-we-do-container:after {
+    transform: skewY(5deg);
+    background-color: red;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    z-index: -12;
+    background-color: #244381;
+}
 #what-we-do-header {
     text-align: center;
     font-size: 3em;
@@ -198,10 +235,6 @@ ul {
 .box {
     text-align: center;
     padding: 1% 1%;
-    border: 1px solid white;
-    margin: 8% 5%;
-    background-color: #3B57A6;
-    border-radius: 18px;
 }
 
 .box .icon {
@@ -222,10 +255,6 @@ ul {
     font-weight: 600;
 }
 
-.services-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
 /*--------------Testimonials------------------*/
 
@@ -244,37 +273,55 @@ ul {
     font-size: 1.2em;
     width: 80vw;
     margin: auto;
-    padding-bottom:2%;
-    padding-top:4%;
+    padding-bottom: 2%;
+    padding-top: 4%;
 }
-.testimonial-para:first-of-type{
-  padding-top:0;
+
+.testimonial-para:first-of-type {
+    padding-top: 0;
 }
-.client-img{
-  margin-top:10px;
-  margin-bottom:25px;
+
+.client-img {
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
-.client-img img{
-  width:100px;
-  height:100px;
+
+.client-img img {
+    width: 100px;
+    height: 100px;
 }
-.client-img p{
-  padding:2px;
-  margin:0;
+
+.client-img p {
+    padding: 2px;
+    margin: 0;
 }
 
 /*--------------Some Of Our Clients------------------*/
-.client-heading{
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 5%;
-    color: #F26522;
+
+.clients-box {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
+
 .clients-container {
+    position: relative;
     background-color: #244381;
     text-align: center;
     color: white;
     padding-bottom: 60px;
+    position: relative;
+    transform: skewY(-5deg);
+    background: #244381;
+    padding-bottom: 10%;
+}
+
+.clients-container > div {
+    transform: skewY(5deg);
+}
+
+.clients-container > h1 {
+    transform: skewY(5deg);
+
 }
 
 .clients-container h1 {
@@ -297,6 +344,22 @@ ul {
 /*--------------Contact Form Section------------------*/
 
 /*----- Contact Us info ------*/
+.contact-container{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.contact-container:before{
+  position:absolute;
+  content:'';
+  height:100%;
+  width:100%;
+  background-color: #100B61;
+  transform:skewY(-5deg);
+  top:-12%;
+  left:0;
+  z-index:-10;
+}
 
 .contact-us-container {
     background-color: #100B61;
@@ -320,8 +383,14 @@ ul {
 .contact-info {
     color: #F26522;
 }
-
-.social-media-icons {}
+.contact-info p {
+  padding-bottom:0.4em;
+  font-family: 'Lato', sans-serif;
+  font-size:0.9em;
+}
+.footer-icon{
+  padding-right:5px;
+}
 
 .media-box {
     width: 30px;
@@ -336,9 +405,26 @@ ul {
 }
 
 /*----- Contact Us form ------*/
+.contact-container{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.contact-container:before{
+  position:absolute;
+  content:'';
+  height:100%;
+  width:100%;
+  background-color: #100B61;
+  transform:skewY(-5deg);
+  top:-12%;
+  left:0;
+  z-index:-10;
+}
 
 .form-container {
     background-color: #100B61;
+    padding-bottom: 8%;
 }
 
 form {
@@ -380,13 +466,39 @@ form textarea::placeholder {
 }
 
 form button[type=submit] {
-    width: 80%;
+    width: 100%;
     background-color: #E82F0C;
     padding: 5px;
     margin: 10px auto;
     border-radius: 3px;
     border: none;
 
+}
+/*----------------Footer----------------*/
+.footer{
+  width:100%;
+  background-color:#100B61;
+  padding-bottom:0.8em;
+}
+.footer ul{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+  display:flex;
+  justify-content: center;
+}
+.footer ul li a{
+  font-size:0.7em;
+  color:white;
+  text-decoration: none;
+  padding-left:0.5em;
+  padding-right:0.5em;
+}
+#copyright {
+  color:white;
+  padding-top:0.9em;
+  font-family: 'Lato',sans-serif;
+  font-size:0.6em;
 }
 
 #homepage-form {
@@ -397,49 +509,44 @@ form button[type=submit] {
     margin-bottom: 2%;
 }
 
-/*jssor slider loading skin spin css*/
-
-.jssorl-009-spin img {
-    animation-name: jssorl-009-spin;
-    animation-duration: 1.6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-#jssor_1{
-    margin-bottom: 5%;
-}
-
-@keyframes jssorl-009-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/*     background-color: inherit;
-    border: none;
-    border-bottom: 1px solid white;
-    margin-left: 5px;
-    margin-bottom: 5px;  */
     /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
     @media only screen and (min-width: 37.5em) {
+        /*--------------Landing Area------------------ */
         .container {
             display: none;
         }
         .navigation li {
             display: flex;
         }
+        .header-phone {
+            margin: 1% 1%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        /*--------------What We Do------------------ */
+        .what-we-do-container{
+          padding:0 3% 2%;
 
+        }
+        .box{
+          margin:3%;
+          background-color: #3B57A6;
+          border-radius: 8px;
+        }
+        .services-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
         /*--------------Testimonials--------------------*/
         .testimonial-box{
         display: flex;
         flex-flow: row-reverse nowrap;
         padding: 0 13%;
-        }
-        .testimonial-box:last-of-type{
+      }
+      .testimonial-box:last-of-type {
           margin-bottom: 10px;
+<<<<<<< HEAD
         }
         #reversed-testimonial{
           display:flex;
@@ -539,3 +646,83 @@ form button[type=submit] {
     }
 
 }
+=======
+      }
+      #reversed-testimonial {
+          display: flex;
+          flex-flow: row nowrap;
+      }
+      .client-img p {
+          margin: 0;
+          padding: 0;
+      }
+      .testimonial-box p:first-child {
+          margin-top: 10px;
+      }
+      .testimonial-box p:last-child {
+          margin-bottom: 20px;
+      }
+      .testimonial-para {
+          width: 98%;
+          padding-left: 2%;
+      }
+      #reversed-testimonial .testimonial-para {
+          width: 98%;
+          padding-right: 2%;
+      }
+      /*--------------Some of our clients--------------------*/
+      .client-box-container {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-around;
+          align-items: flex-start;
+          padding: 0 4%;
+      }
+      .client-box p {
+          width: 100%;
+          font-size: 0.9em;
+          padding: 5%;
+      }
+      /*--------------Contact--------------------*/
+      .contact-container {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          width: 100%;
+          align-items: center;
+          background-color: #100B61;
+      }
+      .contact-us-container {
+          width: 90%;
+          padding-left: 5%;
+      }
+      .contact-us-box {
+          width: 100%;
+          margin: auto;
+      }
+      .form-container {
+          width: 100%;
+          height: 100%;
+      }
+      form {
+          width: 95%;
+          margin: auto;
+          /* height: 100vh; */
+          padding-top: 20%;
+      }
+      form button[type=submit]{
+        width:95%;
+      }
+  }
+
+
+  /* Only CSS rules that need to be changed to meet the LARGE layout go in here */
+
+  @media only screen and (min-width: 64em) {
+      header {
+          display: flex !important;
+          justify-content: space-between;
+      }
+
+  }
+>>>>>>> 3ce1b9a0e90691764b703a394d13e116055b4d46
