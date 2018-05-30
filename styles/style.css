@@ -147,7 +147,6 @@ ul {
     overflow: hidden;
 }
 
-<<<<<<< HEAD
 .landing-page-text-container {
   position: absolute;
   top: 30%;
@@ -164,16 +163,7 @@ ul {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-=======
-.landing-page-div {
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
->>>>>>> 3ce1b9a0e90691764b703a394d13e116055b4d46
-}
+
 
 /*--------------Clickit About Us------------------*/
 
@@ -546,107 +536,7 @@ form button[type=submit] {
       }
       .testimonial-box:last-of-type {
           margin-bottom: 10px;
-<<<<<<< HEAD
-        }
-        #reversed-testimonial{
-          display:flex;
-          flex-flow:row nowrap;
-        }
-        .client-img p{
-          margin:0;
-          padding:0;
-        }
-        .testimonial-box p:first-child{
-          margin-top:10px;
-        }
-        .testimonial-box p:last-child{
-          margin-bottom:20px;
-        }
-        /*--------------Some of our clients--------------------*/
-        .client-box-container {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            align-items: flex-start;
-            padding: 0 4%;
-        }
-        .client-box p {
-            width: 100%;
-            font-size: 0.9em;
-            padding: 5%;
-        }
-        /*--------------Contact--------------------*/
-        .contact-container {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            width: 100%;
-            align-items: center;
-            height: 100%;
-        }
-        .contact-us-container {
-            width: 90%;
-            padding-left: 5%;
-            height: 100vh;
-        }
-        .contact-us-box {
-            width: 100%;
-            margin: auto;
-        }
-        .form-container {
-            width: 100%;
-            height: 100%;
-        }
-        form {
-            width: 95%;
-            margin: auto;
-            height: 100vh;
-            padding-top: 20%;
-        }
-    }
-    /*--------------Contact--------------------*/
-    .contact-container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-        height: 100%;
-    }
-    .contact-us-container {
-        width: 90%;
-        padding-left: 5%;
-        height: 100vh;
-    }
-    .contact-us-box {
-        width: 100%;
-        margin: auto;
-    }
-    .form-container {
-        width: 100%;
-        height: 100%;
-    }
-    form {
-        width: 95%;
-        margin: auto;
-        height: 100vh;
-        padding-top: 20%;
-    }
 
-}
-
-}
-
-/* Only CSS rules that need to be changed to meet the LARGE layout go in here */
-
-@media only screen and (min-width: 64em) {
-    header {
-        display: flex !important;
-        justify-content: space-between;
-    }
-
-}
-=======
       }
       #reversed-testimonial {
           display: flex;
@@ -725,4 +615,3 @@ form button[type=submit] {
       }
 
   }
->>>>>>> 3ce1b9a0e90691764b703a394d13e116055b4d46
