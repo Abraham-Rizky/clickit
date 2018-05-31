@@ -11,7 +11,6 @@ footer {
 
 ul {
     list-style-type: none;
-    display: flex;
 }
 
 /*Hamburger button*/
@@ -70,6 +69,7 @@ ul {
   }
 
   .navigation ul {
+    display: flex;
     position: absolute;
     left: 50%;
     width: 23%;
@@ -105,16 +105,57 @@ ul {
     color: orange;
     }
 
+/*-----------Sticky Nav Styles-------------*/
+
   .navigation-fixed {
    position: fixed;
    background-color: #244381;
    width: 100%;
+   height: 50px;
    left:0;
    z-index: 100;
    border-bottom: 0.3px solid orange;
    transition: ease-in-out, 1.2s;
    
   }
+
+.sticky-nav-hamburger{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+  .navigation-fixed ul {
+    display: block;
+    width: 15%;
+    height: 32em;
+    background-color: red;
+    position: static;
+    margin-top: 3.0em;
+    margin-left: 0em;
+    padding-left: 0;
+  }
+
+  .navigation-fixed .site-icon {
+    position: absolute;
+    left: 50%;
+    width: 12em;
+    height: auto;
+    margin-left: calc(-12em / 2);
+    margin-top: 0.2em;
+  }
+
+  .navigation-fixed .site-icon img {
+    width: 100%;
+    height: auto;
+  }
+
+  .navigation-fixed .navigation-phone {
+   display: none;
+  }
+
+  /*-----------Mobile Nav Styles-------------*/
 
   .navigation.responsive {
       position: absolute;
@@ -133,7 +174,7 @@ ul {
   .navigation.responsive li a {
       text-decoration: none;
   }
-  
+
   .ul-other-pages li a{
       color: #E82F0C;
   }
@@ -155,11 +196,11 @@ ul {
     color: white;
     left: 0;
   }
-  .landing-page-text-container h3{
+  .landing-page-text-container h3 {
       width:75%;
       margin:auto;
   }
-  
+
   .landing-page-wrapper video {
     position: absolute;
     top: 0;
