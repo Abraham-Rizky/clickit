@@ -153,6 +153,10 @@ ul {
     color: white;
     left: 0;
   }
+  .landing-page-text-container h3{
+      width:75%;
+      margin:auto;
+  }
   
   .landing-page-wrapper video {
     position: absolute;
@@ -167,7 +171,6 @@ ul {
 /*--------------Clickit About Us------------------*/
 
 .clickit-about {
-    /*Remove once header is finished */
     width: 80vw;
     margin: 0 auto;
     text-align: center;
@@ -176,8 +179,14 @@ ul {
 .clickit-about h1 {
     font-size: 3em;
     color: #F26522;
+    padding-top:2%;
 }
 
+.clickit-about p{
+    font-family:'Lato', sans-serif;
+    font-size:1.2em;
+    padding-bottom:2%;
+}
 /*--------------What We Do------------------*/
 
 .what-we-do-container {
