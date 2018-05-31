@@ -22,6 +22,10 @@ ul {
     z-index: 6;
 }
 
+.navigation .container-left {
+    display: none;
+}
+
 .bar1,
 .bar2,
 .bar3 {
@@ -54,21 +58,21 @@ ul {
     text-align: center;
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  .site-icon {
+.site-icon {
     width: 15em;
     height: auto;
     margin-left: 2em;
     margin-top: 0.5em;
-  }
+}
 
-  .site-icon img {
+.site-icon img {
     width: 100%;
     height: auto;
-  }
+}
 
-  .navigation ul {
+.navigation ul {
     display: flex;
     position: absolute;
     left: 50%;
@@ -76,140 +80,146 @@ ul {
     margin-top: 1.4em;
     margin-left: calc(-23% / 2);
     padding-left: 0;
-  }
+}
 
-  .navigation li {
-      display: none;
-      margin-right: 10%;
-      white-space: nowrap;
-  }
+.navigation li {
+    display: none;
+    margin-right: 10%;
+    white-space: nowrap;
+}
 
-  .navigation li a {
+.navigation li a {
     text-decoration: none;
     color: white;
-  }
+}
 
-  .navigation li a:hover {
+.navigation li a:hover {
     color: orange;
-  }
+}
 
-  .navigation-phone {
+.navigation-phone {
     font-size: 1.4em;
     color: orange;
     margin-right: 2em;
     position: absolute;
     right: 0;
-  }
+}
 
-  .navigation-phone a {
+.navigation-phone a {
     color: orange;
-    }
+}
 
 /*-----------Sticky Nav Styles-------------*/
 
-  .navigation-fixed {
-   position: fixed;
-   background-color: #244381;
-   width: 100%;
-   height: 50px;
-   left:0;
-   z-index: 100;
-   border-bottom: 0.3px solid orange;
-   transition: ease-in-out, 1.2s;
-   
-  }
-
-.sticky-nav-hamburger{
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
+.navigation-fixed {
+    position: fixed;
+    background-color: #244381;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    z-index: 100;
+    border-bottom: 0.3px solid orange;
+    transition: ease-in-out, 1.2s;
 }
 
-  .navigation-fixed ul {
+.navigation-fixed .container-left {
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+.navigation-fixed ul {
     display: block;
     width: 15%;
-    height: 32em;
     background-color: red;
     position: static;
     margin-top: 3.0em;
     margin-left: 0em;
     padding-left: 0;
-  }
+    overflow: hidden;
+    float: left;
+}
 
-  .navigation-fixed .site-icon {
+.sticky-nav-toggle {
+    height: 90vh;
+    transition: ease-in-out 1;
+}
+
+.navigation-fixed .site-icon {
     position: absolute;
     left: 50%;
     width: 12em;
     height: auto;
     margin-left: calc(-12em / 2);
     margin-top: 0.2em;
-  }
+}
 
-  .navigation-fixed .site-icon img {
+.navigation-fixed .site-icon img {
     width: 100%;
     height: auto;
-  }
+}
 
-  .navigation-fixed .navigation-phone {
-   display: none;
-  }
+.navigation-fixed .navigation-phone {
+    display: none;
+}
 
-  /*-----------Mobile Nav Styles-------------*/
+/*-----------Mobile Nav Styles-------------*/
 
-  .navigation.responsive {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 75%;
-      height: 100%;
-  }
+.navigation.responsive {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+}
 
-  .navigation.responsive li {
-      display: flex;
-      background-color: red;
-      width: 100%;
-  }
+.navigation.responsive li {
+    display: flex;
+    background-color: red;
+    width: 100%;
+}
 
-  .navigation.responsive li a {
-      text-decoration: none;
-  }
+.navigation.responsive li a {
+    text-decoration: none;
+}
 
-  .ul-other-pages li a{
-      color: #E82F0C;
-  }
-  /*--------------Landing page wordings------------------*/
+.ul-other-pages li a {
+    color: #E82F0C;
+}
 
-  .landing-page-wrapper {
-      text-align: center;
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-  }
+/*--------------Landing page wordings------------------*/
 
-  .landing-page-text-container {
+.landing-page-wrapper {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.landing-page-text-container {
     position: absolute;
     top: 30%;
     width: 100%;
     font-size: 1.1em;
     color: white;
     left: 0;
-  }
-  .landing-page-text-container h3 {
-      width:75%;
-      margin:auto;
-  }
+}
 
-  .landing-page-wrapper video {
+.landing-page-text-container h3 {
+    width: 75%;
+    margin: auto;
+}
+
+.landing-page-wrapper video {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
-  }
+}
 
 /*--------------Clickit About Us------------------*/
 
@@ -222,14 +232,15 @@ ul {
 .clickit-about h1 {
     font-size: 3em;
     color: #F26522;
-    padding-top:2%;
+    padding-top: 2%;
 }
 
-.clickit-about p{
-    font-family:'Lato', sans-serif;
-    font-size:1.2em;
-    padding-bottom:2%;
+.clickit-about p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 2%;
 }
+
 /*--------------What We Do------------------*/
 
 .what-we-do-container {
@@ -265,6 +276,7 @@ ul {
     z-index: -12;
     background-color: #244381;
 }
+
 #what-we-do-header {
     text-align: center;
     font-size: 3em;
@@ -279,7 +291,7 @@ ul {
 
 .box .icon {
     color: #F26522;
-    padding-top:3%;
+    padding-top: 3%;
 }
 
 .box h3 {
@@ -295,7 +307,6 @@ ul {
     padding: 20px 0px 40px;
     font-weight: 600;
 }
-
 
 /*--------------Testimonials------------------*/
 
@@ -357,11 +368,11 @@ ul {
     padding-top: 3%
 }
 
-.clients-container > div {
+.clients-container>div {
     transform: skewY(5deg);
 }
 
-.clients-container > h1 {
+.clients-container>h1 {
     transform: skewY(5deg);
 }
 
@@ -385,21 +396,23 @@ ul {
 /*--------------Contact Form Section------------------*/
 
 /*----- Contact Us info ------*/
-.contact-container{
-  position:relative;
-  width:100%;
-  height:100%;
+
+.contact-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-.contact-container:before{
-  position:absolute;
-  content:'';
-  height:100%;
-  width:100%;
-  background-color: #100B61;
-  transform:skewY(-5deg);
-  top:-12%;
-  left:0;
-  z-index:-10;
+
+.contact-container:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #100B61;
+    transform: skewY(-5deg);
+    top: -12%;
+    left: 0;
+    z-index: -10;
 }
 
 .contact-us-container {
@@ -424,13 +437,15 @@ ul {
 .contact-info {
     color: #F26522;
 }
+
 .contact-info p {
-  padding-bottom:0.4em;
-  font-family: 'Lato', sans-serif;
-  font-size:0.9em;
+    padding-bottom: 0.4em;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
 }
-.footer-icon{
-  padding-right:5px;
+
+.footer-icon {
+    padding-right: 5px;
 }
 
 .media-box {
@@ -446,21 +461,23 @@ ul {
 }
 
 /*----- Contact Us form ------*/
-.contact-container{
-  position:relative;
-  width:100%;
-  height:100%;
+
+.contact-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-.contact-container:before{
-  position:absolute;
-  content:'';
-  height:100%;
-  width:100%;
-  background-color: #100B61;
-  transform:skewY(-5deg);
-  top:-20%;
-  left:0;
-  z-index:-10;
+
+.contact-container:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #100B61;
+    transform: skewY(-5deg);
+    top: -20%;
+    left: 0;
+    z-index: -10;
 }
 
 .form-container {
@@ -487,7 +504,6 @@ form input[type=text] {
     width: inherit;
 }
 
-
 form input::placeholder {
     color: rgba(242, 101, 34, 0.8);
 }
@@ -512,33 +528,37 @@ form button[type=submit] {
     margin: 10px auto;
     border-radius: 3px;
     border: none;
+}
 
-}
 /*----------------Footer----------------*/
-.footer{
-  width:100%;
-  background-color:#100B61;
-  padding-bottom:0.8em;
+
+.footer {
+    width: 100%;
+    background-color: #100B61;
+    padding-bottom: 0.8em;
 }
-.footer ul{
-  width:100%;
-  margin:0 auto;
-  padding:0;
-  display:flex;
-  justify-content: center;
+
+.footer ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
-.footer ul li a{
-  font-size:0.7em;
-  color:white;
-  text-decoration: none;
-  padding-left:0.5em;
-  padding-right:0.5em;
+
+.footer ul li a {
+    font-size: 0.7em;
+    color: white;
+    text-decoration: none;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
+
 #copyright {
-  color:white;
-  padding-top:0.9em;
-  font-family: 'Lato',sans-serif;
-  font-size:0.6em;
+    color: white;
+    padding-top: 0.9em;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.6em;
 }
 
 #homepage-form {
@@ -549,139 +569,140 @@ form button[type=submit] {
     margin-bottom: 2%;
 }
 
-
 /*------------------About Us Page Styles-----------------*/
-.about-us-container{
-    width:100%;
-    background-color:#100B61;
-    color:white;
+
+.about-us-container {
+    width: 100%;
+    background-color: #100B61;
+    color: white;
 }
-.about-us-container h1{
-    color:#F26522;
+
+.about-us-container h1 {
+    color: #F26522;
 }
 
 /*------------------Contact Page Styles-----------------*/
-#contact-page-form{
-    background-color:#333192;
+
+#contact-page-form {
+    background-color: #333192;
     padding: 0;
     margin: 0;
 }
-.contact-page-title{
+
+.contact-page-title {
     text-align: center;
 }
 
-    /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
-    @media only screen and (min-width: 37.5em) {
-        /*--------------Landing Area------------------ */
-        .container {
-            display: none;
-        }
-        .navigation li {
-            display: flex;
-        }
-        .header-phone {
-            margin: 1% 1%;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        /*--------------What We Do------------------ */
-        .what-we-do-container{
-          padding:0 3% 2%;
+/* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
 
-        }
-        .box{
-          margin:3%;
-          background-color: #3B57A6;
-          border-radius: 8px;
-        }
-        .services-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        /*--------------Testimonials--------------------*/
-        .testimonial-box{
+@media only screen and (min-width: 37.5em) {
+    /*--------------Landing Area------------------ */
+    .container {
+        display: none;
+    }
+    .navigation li {
+        display: flex;
+    }
+    .header-phone {
+        margin: 1% 1%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    /*--------------What We Do------------------ */
+    .what-we-do-container {
+        padding: 0 3% 2%;
+    }
+    .box {
+        margin: 3%;
+        background-color: #3B57A6;
+        border-radius: 8px;
+    }
+    .services-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /*--------------Testimonials--------------------*/
+    .testimonial-box {
         display: flex;
         flex-flow: row-reverse nowrap;
         padding: 0 13%;
-      }
-      .testimonial-box:last-of-type {
-          margin-bottom: 10px;
-      }
-      #reversed-testimonial {
-          display: flex;
-          flex-flow: row nowrap;
-      }
-      .client-img p {
-          margin: 0;
-          padding: 0;
-      }
-      .testimonial-box p:first-child {
-          margin-top: 10px;
-      }
-      .testimonial-box p:last-child {
-          margin-bottom: 20px;
-      }
-      .testimonial-para {
-          width: 98%;
-          padding-left: 2%;
-      }
-      #reversed-testimonial .testimonial-para {
-          width: 98%;
-          padding-right: 2%;
-      }
-      /*--------------Some of our clients--------------------*/
-      .client-box-container {
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: space-around;
-          align-items: flex-start;
-          padding: 0 4%;
-      }
-      .client-box p {
-          width: 100%;
-          font-size: 0.9em;
-          padding: 5%;
-      }
-      /*--------------Contact--------------------*/
-      .contact-container {
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: center;
-          width: 100%;
-          align-items: center;
-          background-color: #100B61;
-      }
-      .contact-us-container {
-          width: 90%;
-          padding-left: 5%;
-      }
-      .contact-us-box {
-          width: 100%;
-          margin: auto;
-      }
-      .form-container {
-          width: 100%;
-          height: 100%;
-      }
-      form {
-          width: 95%;
-          margin: auto;
-          /* height: 100vh; */
-          padding-top: 20%;
-      }
-      form button[type=submit]{
-        width:95%;
-      }
-  }
+    }
+    .testimonial-box:last-of-type {
+        margin-bottom: 10px;
+    }
+    #reversed-testimonial {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .client-img p {
+        margin: 0;
+        padding: 0;
+    }
+    .testimonial-box p:first-child {
+        margin-top: 10px;
+    }
+    .testimonial-box p:last-child {
+        margin-bottom: 20px;
+    }
+    .testimonial-para {
+        width: 98%;
+        padding-left: 2%;
+    }
+    #reversed-testimonial .testimonial-para {
+        width: 98%;
+        padding-right: 2%;
+    }
+    /*--------------Some of our clients--------------------*/
+    .client-box-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0 4%;
+    }
+    .client-box p {
+        width: 100%;
+        font-size: 0.9em;
+        padding: 5%;
+    }
+    /*--------------Contact--------------------*/
+    .contact-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        background-color: #100B61;
+    }
+    .contact-us-container {
+        width: 90%;
+        padding-left: 5%;
+    }
+    .contact-us-box {
+        width: 100%;
+        margin: auto;
+    }
+    .form-container {
+        width: 100%;
+        height: 100%;
+    }
+    form {
+        width: 95%;
+        margin: auto;
+        /* height: 100vh; */
+        padding-top: 20%;
+    }
+    form button[type=submit] {
+        width: 95%;
+    }
+}
 
+/* Only CSS rules that need to be changed to meet the LARGE layout go in here */
 
-  /* Only CSS rules that need to be changed to meet the LARGE layout go in here */
-
-  @media only screen and (min-width: 64em) {
-      header {
-          display: flex !important;
-          justify-content: space-between;
-      }
-
-  }
+@media only screen and (min-width: 64em) {
+    header {
+        display: flex !important;
+        justify-content: space-between;
+    }
+}
