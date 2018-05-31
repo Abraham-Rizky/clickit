@@ -113,6 +113,7 @@ ul {
    z-index: 100;
    border-bottom: 0.3px solid orange;
    transition: ease-in-out, 1.2s;
+   
   }
 
   .navigation.responsive {
@@ -516,6 +517,16 @@ form button[type=submit] {
 }
 .about-us-container h1{
     color:#F26522;
+}
+
+/*------------------Contact Page Styles-----------------*/
+#contact-page-form{
+    background-color:#333192;
+    padding: 0;
+    margin: 0;
+}
+.contact-page-title{
+    text-align: center;
 }
 
     /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
