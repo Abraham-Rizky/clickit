@@ -56,19 +56,19 @@ ul {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .site-icon {
     width: 15em;
     height: auto;
     margin-left: 2em;
     margin-top: 0.5em;
   }
-  
+
   .site-icon img {
     width: 100%;
     height: auto;
   }
-  
+
   .navigation ul {
     position: absolute;
     left: 50%;
@@ -77,22 +77,22 @@ ul {
     margin-left: calc(-23% / 2);
     padding-left: 0;
   }
-  
+
   .navigation li {
       display: none;
       margin-right: 10%;
       white-space: nowrap;
   }
-  
+
   .navigation li a {
     text-decoration: none;
     color: white;
   }
-  
+
   .navigation li a:hover {
     color: orange;
   }
-  
+
   .navigation-phone {
     font-size: 1.4em;
     color: orange;
@@ -100,11 +100,11 @@ ul {
     position: absolute;
     right: 0;
   }
-  
+
   .navigation-phone a {
     color: orange;
     }
-  
+
   .navigation-fixed {
    position: fixed;
    background-color: #244381;
@@ -112,8 +112,9 @@ ul {
    left:0;
    z-index: 100;
    border-bottom: 0.3px solid orange;
+   transition: ease-in-out, 1.2s;
   }
-  
+
   .navigation.responsive {
       position: absolute;
       top: 0;
@@ -121,19 +122,19 @@ ul {
       width: 75%;
       height: 100%;
   }
-  
+
   .navigation.responsive li {
       display: flex;
       background-color: red;
       width: 100%;
   }
-  
+
   .navigation.responsive li a {
       text-decoration: none;
   }
-  
+
   /*--------------Landing page wordings------------------*/
-  
+
   .landing-page-wrapper {
       text-align: center;
       position: relative;
@@ -141,7 +142,7 @@ ul {
       height: 100vh;
       overflow: hidden;
   }
-  
+
   .landing-page-text-container {
     position: absolute;
     top: 30%;
@@ -150,7 +151,7 @@ ul {
     color: white;
     left: 0;
   }
-  
+
   .landing-page-wrapper video {
     position: absolute;
     top: 0;
