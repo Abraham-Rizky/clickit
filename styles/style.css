@@ -132,14 +132,10 @@ ul {
   .navigation.responsive li a {
       text-decoration: none;
   }
-<<<<<<< HEAD
-
-=======
   
   .ul-other-pages li a{
       color: #E82F0C;
   }
->>>>>>> d825bd24178dfd4539bde7ffb6846f3db74d255f
   /*--------------Landing page wordings------------------*/
 
   .landing-page-wrapper {
@@ -158,15 +154,11 @@ ul {
     color: white;
     left: 0;
   }
-<<<<<<< HEAD
-
-=======
   .landing-page-text-container h3{
       width:75%;
       margin:auto;
   }
   
->>>>>>> d825bd24178dfd4539bde7ffb6846f3db74d255f
   .landing-page-wrapper video {
     position: absolute;
     top: 0;
