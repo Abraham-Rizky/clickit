@@ -581,6 +581,90 @@ form button[type=submit] {
     color: #F26522;
 }
 
+
+/*------------------Services Page Styles-----------------*/
+/* global styles */
+.wrapper{
+    width:100%;
+    text-align: center;
+}
+h2{
+    padding:2%;
+    font-size:2em;
+}
+p{
+    width:80%;
+    margin:auto;
+    font-family: 'Lato',sans-serif;
+}
+img{
+    width:80%;
+    max-width:800px;
+}
+
+.services-btn{
+    margin-top: 2%;
+}
+
+/* Google tour section */
+.google-container p {
+    padding-top:3%;
+}
+.google-container p:first-of-type {
+    padding-bottom:3%;
+}
+
+
+/* Video section  */
+.video-container{
+    background-color:#100B61;
+    transform: skewY(-3deg);
+    margin:6%;
+}
+.video-wrapper{
+    transform: skewY(3deg);
+}
+.video-wrapper h2{
+    color:white;
+    padding-top:8%;
+}
+.video-wrapper p {
+    color:white;
+    padding-top:3%;
+}
+.video-wrapper p:last-of-type{
+    padding-bottom:6%;
+}
+.video-container .video-iframe{
+    width:80%;
+}
+
+/* Social Media section */
+.social-media-wrapper p{
+    padding:6% 0;
+}
+
+/* Seo Section */
+.seo-container{
+    background-color: #244381;
+    transform: skewY(-3deg);
+    margin:6%;
+}
+.seo-wrapper{
+    transform: skewY(3deg);
+}
+
+.seo-container h2{
+    color:white;
+    font-size: 2em;
+    padding-top:8%;
+}
+.seo-container p{
+    font-family: 'Lato',sans-serif;
+    color:white;
+    padding-top:3%;
+    padding-bottom:6%;
+}
 /*------------------Contact Page Styles-----------------*/
 
 #contact-page-form {
