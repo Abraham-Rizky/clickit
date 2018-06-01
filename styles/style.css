@@ -14,7 +14,6 @@ ul {
 }
 
 /*Hamburger button*/
-
 .container {
     position: absolute;
     top: 1%;
@@ -22,16 +21,18 @@ ul {
     z-index: 6;
 }
 
+/*Sticky Nav Button*/
 .navigation .container-left {
     display: none;
 }
 
+/*Mobile Hamburger Nav*/
 .bar1,
 .bar2,
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: white;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -70,6 +71,14 @@ ul {
 .site-icon img {
     width: 100%;
     height: auto;
+}
+
+.navigation-icon {
+  display: none;
+}
+
+.fa-laptop {
+  display: none;
 }
 
 .navigation ul {
@@ -122,27 +131,68 @@ ul {
     transition: ease-in-out, 1.2s;
 }
 
+/*Sticky Nav Button*/
 .navigation-fixed .container-left {
     display: block;
     position: absolute;
-    left: 0;
+    left: 1.5em;
+    cursor: pointer;
+}
+
+.navigation-fixed .navigation-icon {
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  color: white;
+  margin-left: 1em;
+}
+
+.navigation-fixed .fa-laptop {
+  display: block;
+  float: left;
+  font-size: 1.2em;
+  color: white;
+  margin-left: 1.3em;
+}
+
+.navigation-fixed .fa-mobile-alt {
+  margin-left: 1.2em;
 }
 
 .navigation-fixed ul {
-    display: block;
-    width: 15%;
-    background-color: red;
+    display: list-item;
+    width: 17em;
+    background-color: #2c2e30;
     position: static;
     margin-top: 3.0em;
     margin-left: 0em;
     padding-left: 0;
     overflow: hidden;
-    float: left;
+    transition: all 2s ease-in-out;
 }
 
 .sticky-nav-toggle {
-    height: 90vh;
-    transition: ease-in-out 1;
+    height: 100vh;
+}
+
+.navigation-fixed li:first-child {
+  margin-top: 7em;
+}
+
+.navigation-fixed li {
+    display: block;
+    width: 100%;
+    height: 2em;
+    margin-bottom: 3em;
+}
+
+.navigation-fixed li a {
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: 1.1em;
+    width: 50%;
+    margin: auto;
 }
 
 .navigation-fixed .site-icon {
