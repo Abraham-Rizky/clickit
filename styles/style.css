@@ -24,12 +24,9 @@ footer {
 ul {
     list-style-type: none;
 }
-
-.page-title {
-    text-align: center;
-    margin: 0 auto;
+.page-title{
+    color: white;
 }
-
 /*Hamburger button*/
 
 .container {
