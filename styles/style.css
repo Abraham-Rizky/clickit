@@ -24,9 +24,7 @@ footer {
 ul {
     list-style-type: none;
 }
-.page-title{
-    color: white;
-}
+
 /*Hamburger button*/
 
 .container {
@@ -101,7 +99,7 @@ ul {
 .navigation ul {
     display: flex;
     position: absolute;
-    left: 55%;
+    left: 50%;
     width: 23%;
     margin-top: 1.4em;
     margin-left: calc(-23% / 2);
@@ -436,11 +434,11 @@ ul {
     padding-top: 3%
 }
 
-.clients-container>div {
+.clients-container > div {
     transform: skewY(5deg);
 }
 
-.clients-container>h1 {
+.clients-container > h1 {
     transform: skewY(5deg);
 }
 
@@ -649,6 +647,15 @@ form button[type=submit] {
     color: #F26522;
 }
 
+.page-title p{
+    color: black;
+    text-align: center;
+}
+
+.page-title{
+    margin-bottom: 100%;
+}
+
 /*------------------Services Page Styles-----------------*/
 
 /* global styles */
@@ -782,6 +789,7 @@ img {
     width: 80%;
     max-width: 800px;
     margin: auto;
+
 }
 
 .seo-container p {
@@ -850,20 +858,18 @@ img {
     padding-top: 4%;
 }
 
-/* 
-.graphic-design-container::after{ 
+/* .graphic-design-container::after{ */
 
 content:'';
 display:block;
 position: absolute;
-bottom:0px;
+bottom:0;
 left:0;
-background-color :green;
+background-color:green;
 z-index:-100;
 width:100%;
 height:100%;
 }
-*/
 
 /*------------------Contact Page Styles-----------------*/
 
@@ -988,5 +994,8 @@ height:100%;
     header {
         display: flex !important;
         justify-content: space-between;
+    }
+    .page-title{
+        margin-bottom: 35%;
     }
 }
