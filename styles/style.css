@@ -894,6 +894,72 @@ form button[type=submit] {
 .contact-site-nav ul li a{
     color:white;
 }
+/* Careers page */
+.career-banner{
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.9)), url("/images/careers-banner.jpg") no-repeat center fixed;
+    background-size:cover;
+}
+.career-banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.career-banner .career-banner-text{
+    color:white;
+    text-align: center;
+}
+.career-banner .career-banner-text #team-span{
+    display:block;
+}
+.career-id{
+    position: absolute; 
+    bottom:0;
+    left:50%;
+    color:white;
+    transform: translate(-50%);
+    margin-bottom:2%;
+}
+.career-id .career-id-box{
+    margin:auto;
+    text-align: center;
+    background-color:rgba(40,41,41,0.5);
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+}
+#down-arrow{
+    padding-top:6px;
+}
+.career-wrapper{
+    text-align:center;
+}
+.career-line{
+    text-align:center;
+}
+.career-wrapper h1{
+    font-size:2em;
+}
+.career-wrapper .career-line{
+    height:4px;
+    width:40%;
+    background:orange;
+    margin:auto;
+}
+#career-btn{
+    display: block;
+    background-color: orange;
+    border-radius: 3px;
+    margin: 7px auto 10px;
+}
+.job-box a{
+    text-decoration: none;
+}
+.career-footer{
+    margin-top:29px;
+}
 
 /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
 
