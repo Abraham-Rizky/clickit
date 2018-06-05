@@ -640,6 +640,9 @@ form button[type=submit] {
 
 /*------------------Services Page Styles-----------------*/
 /* global styles */
+.service-nav-header{
+    background-color:#244381;
+}
 .service-wrapper{
     width:100%;
     text-align: center;
