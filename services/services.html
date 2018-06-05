@@ -14,9 +14,45 @@
 
 <body>
     <header>
+            <div class="wrapper">
+                    <nav class="navigation">
+                        <div class="container-left" onclick="myFunction(this); toggleStickyHam();">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <div class="container" onclick="myFunction(this); toggleHam();">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <div class="site-icon">
+                            <img src="../images/Logo.png">
+                        </div>
+                        <ul id="ul">
+                            <li>
+                                <i class="navigation-icon fas fa-home"></i>
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li>
+                                <i class="navigation-icon far fa-hand-point-up"></i>
+                                <a href="/about/about.html">About Us</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-laptop"></i>
+                                <a href="../services/services.html">Services</a>
+                            </li>
+                            <li>
+                                <i class="navigation-icon fas fa-mobile-alt"></i>
+                                <a href="/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <h2 class="navigation-phone">(702) CLICKIT</h2>
+                    </nav>
+                </div>
     </header>
     <main>
-        <div class="wrapper">
+        <div class="service-wrapper">
             <div class="google-container">
                 <h2>Google Virtual Tour</h2>
                 <div class="virtual-tour-box">
@@ -33,23 +69,24 @@
                 <p>According to a recent Google study, when searching for businesses, consumers use mapping products 44% of
                     the time. When nearly half of all consumers use it to find your business, it makes sense to have a piece
                     of the pie.</p>
-                <button type="submit" class="services-btn">Get yourself a tour</button>
             </div>
             <div class="video-container">
                 <div class="video-wrapper">
                     <h2>4K Videography</h2>
                     <!-- <iframe width="420" height="315" src="https://www.youtube.com/embed/PB9jfyuQgCI"></iframe> -->
                     <!-- <iframe width="420" height="315" src="https://www.youtube.com/embed/Q9Fs652EwHY"></iframe> -->
-                    <div class="video-box">
-                    <iframe class="video-iframe" width="420" height="315" src="https://www.youtube.com/embed/sLyk1TlfTIk"></iframe>
+                    <div class="flex-container">
+                        <div class="video-box">
+                        <iframe class="video-iframe" width="420" height="315" src="https://www.youtube.com/embed/sLyk1TlfTIk"></iframe>
+                        </div>
+                        <p>Interactive, 4k quality videos are a unique way to show case your business. Video marketing is also increasing
+                            at a staggering rate in popularity and effectiveness: 45% of people watch more than an hour of Facebook
+                            or YouTube videos a week! A recent article by Forbes also reports that 90% of customers report that product
+                            videos help them make purchasing decisions. With video becoming an increasingly important piece of the
+                            content marketing puzzle, wouldn’t you like to have a share of the market, and therefore profits?</p>
+                        <p>These are just some examples of videos we’ve created for our clients, but the only way to get a piece of
+                            the profits is to click that handy little button below.</p>
                     </div>
-                    <p>Interactive, 4k quality videos are a unique way to show case your business. Video marketing is also increasing
-                        at a staggering rate in popularity and effectiveness: 45% of people watch more than an hour of Facebook
-                        or YouTube videos a week! A recent article by Forbes also reports that 90% of customers report that product
-                        videos help them make purchasing decisions. With video becoming an increasingly important piece of the
-                        content marketing puzzle, wouldn’t you like to have a share of the market, and therefore profits?</p>
-                    <p>These are just some examples of videos we’ve created for our clients, but the only way to get a piece of
-                        the profits is to click that handy little button below.</p>
                 </div>
             </div>
             <div class="social-media-container">
@@ -122,10 +159,35 @@
                         efficent manner.</p>
                 </div>
             </div>
+            <div class="service-contact-section" >
+                    <h1>Let Us Help You Build Your Business!</h1>
+                    <i class="fas fa-arrow-circle-down fa-2x"></i>
+                    <a href="../contact.html"><button type="submit" class="service-btn">Send a Message</button></a>
+            </div>
         </div>
     </main>
     <footer>
+        <div id="service-footer" class="footer">
+                <ul>
+                    <li>
+                        <a href="">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="">Careers</a>
+                    </li>
+                </ul>
+                <ul id="copyright">
+                    <li>&copy; 2018 Clickit Social</li>
+                </ul>
+            </div>
     </footer>
+<script src="../scripts/script.js"></script>
 </body>
 
 </html>

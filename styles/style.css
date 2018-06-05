@@ -5,8 +5,14 @@
     font-family: 'Bitter', serif;
 }
 
-footer {
-    margin-top: 5%;
+#service-footer{
+    margin:0;
+    position: relative;
+    z-index:200;
+
+}
+#service-footer ul{
+    padding:5px;
 }
 
 ul {
@@ -634,22 +640,22 @@ form button[type=submit] {
 
 /*------------------Services Page Styles-----------------*/
 /* global styles */
-.wrapper{
+.service-wrapper{
     width:100%;
     text-align: center;
 }
-h2{
+.service-wrapper h2{
     padding:2%;
     font-size:2em;
 }
-p{
+.service-wrapper p{
     width:80%;
     margin:auto;
     font-family: 'Lato',sans-serif;
 }
-img{
+.service-wrapper img{
     width:80%;
-    max-width:800px;
+    max-width:600px;
 }
 
 .services-btn{
@@ -670,7 +676,8 @@ img{
 }
 .virtual-tour-box img{
     width:80%;
-    max-width:800px;
+    max-width:600px;
+    border:4px solid black;
 }
 .google-cert{
     max-width:400px;
@@ -681,7 +688,6 @@ img{
 .video-container{
     background-color:#100B61;
     transform: skewY(-3deg);
-    margin:6%;
 }
 .video-wrapper{
     transform: skewY(3deg);
@@ -710,20 +716,20 @@ img{
 .social-media-wrapper p{
     padding:6% 0;
 }
-.social-media-box{
+.service-wrapper .social-media-box{
     width:80%;
     margin:auto;
 }
-.social-media-box img{
+.service-wrapper .social-media-box img{
     width:80%;
-    max-width: 800px;
+    max-width: 600px;
+    border:4px solid black;
 }
 
 /* Seo Section */
 .seo-container{
     background-color: #244381;
     transform: skewY(-3deg);
-    margin:6%;
 }
 .seo-wrapper{
     transform: skewY(3deg);
@@ -742,8 +748,9 @@ img{
 
 .seo-img-box img{
     width: 80%;
-    max-width: 800px;
+    max-width: 600px;
     margin:auto;
+    border:4px solid black;
     
 }
 .seo-container p{
@@ -756,7 +763,7 @@ img{
 .web-development-container{
     width:100%;
 }
-.web-dev-box{
+.service-wrapper .web-dev-box{
     width:80%;
     max-width:800px;
     margin:auto;
@@ -783,6 +790,15 @@ img{
     width:100%;
     height:100%;
 }
+.graphic-design-container::after{
+    content:"";
+    width:inherit;
+    height:inherit;
+    position: absolute;
+    bottom:0;
+    left:0;
+
+}
 .graphic-design-wrapper{
     transform:skewY(-3deg);
     padding:6% 0;
@@ -800,17 +816,36 @@ img{
 .graphic-design-wrapper p:last-of-type{
     padding-top:4%;
 }
-/* .graphic-design-container::after{ */
-    content:'';
-    display:block;
-    position: absolute;
-    bottom:0;
-    left:0;
-    background-color:green;
-    z-index:-100;
-    width:100%;
-    height:100%;
+/* Services Contact Section */
+.service-contact-section {
+    padding:30px;
+    background-color:white;
+    position: relative;
+    z-index:400;
 }
+.service-contact-section h1{
+    margin:0;
+    padding:0;
+    font-weight: 400;
+}
+.service-contact-section .fa-arrow-circle-down {
+    display:block;
+    padding-top:1%;
+}
+.service-contact-section .service-btn {
+    padding:10px;
+    margin-top: 1%;
+    background-color:orange;
+    border:none;
+    border-radius: 40px;
+}
+.service-contact-section .service-btn:hover{
+    cursor: pointer;
+    background-color:#ff9b00;
+    border:1px solid black;
+}
+
+
 /*------------------Contact Page Styles-----------------*/
 
 #contact-page-form {
@@ -819,8 +854,42 @@ img{
     margin: 0;
 }
 
-.contact-page-title {
+/* .contact-page-title {
     text-align: center;
+}
+.contact-page-wrap{
+    display:flex;
+}
+.contact-page-wrap .contact-page-container{
+    flex:2;
+    width:100%;
+}
+.contact-page-wrap .contact-us-container{
+    width:100%;
+    text-align: center;
+}
+.contact-form-container #contact-page-form {
+    width:100%;
+    background-color:rgb(255, 167, 35);
+}
+.contact-form-container .inner-form{
+    width:65%;
+    margin: auto;
+}
+.inner-form input[type=text]{
+    display:block;
+}
+.inner-form .final-form{
+    width:100%;
+    margin: auto;
+    padding:4% 1%;
+} */
+/* contact page nav */
+.contact-site-nav{
+    background-color: #333192;
+}
+.contact-site-nav ul li a{
+    color:white;
 }
 
 /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
@@ -925,6 +994,29 @@ img{
     }
     form button[type=submit] {
         width: 95%;
+    }
+    /* ------------ Services Page----------- */
+    .service-wrapper p{
+        font-size:1.4em;
+        line-height:1.3;
+        
+    }
+
+    /* Seo section */
+    .seo-wrapper h2{
+        padding-top:4%;
+    }
+    /* Graphic design */
+    .graphic-design-wrapper h2{
+        padding:0;
+        margin-top:0;
+    }
+    .graphic-design-wrapper p:last-of-type{
+        padding-top:1%;
+    }
+    /* Contact Page Styles */
+    .inner-form .final-form{
+        width:80%;
     }
 }
 
