@@ -1,3 +1,15 @@
+/*
+Theme Name: ClickIt Social, Inc. V2
+Theme URI: http://clickitsocial.com
+Template: clickitsocial-service
+Author: Rizky Abraham/ Bryan Almaraz/ AJ
+Author URI: http://clickitsocial.com
+Tags: Sass
+Version: 1.0.1511396026
+Updated: 2017-11-23 00:13:20
+
+*/
+
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * {
@@ -20,6 +32,7 @@ ul {
 }
 
 /*Hamburger button*/
+
 .container {
     position: absolute;
     top: 1%;
@@ -28,11 +41,13 @@ ul {
 }
 
 /*Sticky Nav Button*/
+
 .navigation .container-left {
     display: none;
 }
 
 /*Mobile Hamburger Nav*/
+
 .bar1,
 .bar2,
 .bar3 {
@@ -80,11 +95,11 @@ ul {
 }
 
 .navigation-icon {
-  display: none;
+    display: none;
 }
 
 .fa-laptop {
-  display: none;
+    display: none;
 }
 
 .navigation ul {
@@ -138,6 +153,7 @@ ul {
 }
 
 /*Sticky Nav Button*/
+
 .navigation-fixed .container-left {
     display: block;
     position: absolute;
@@ -146,23 +162,23 @@ ul {
 }
 
 .navigation-fixed .navigation-icon {
-  display: block;
-  float: left;
-  font-size: 1.5em;
-  color: white;
-  margin-left: 1em;
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    color: white;
+    margin-left: 1em;
 }
 
 .navigation-fixed .fa-laptop {
-  display: block;
-  float: left;
-  font-size: 1.2em;
-  color: white;
-  margin-left: 1.3em;
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    color: white;
+    margin-left: 1.3em;
 }
 
 .navigation-fixed .fa-mobile-alt {
-  margin-left: 1.2em;
+    margin-left: 1.2em;
 }
 
 .navigation-fixed ul {
@@ -182,7 +198,7 @@ ul {
 }
 
 .navigation-fixed li:first-child {
-  margin-top: 7em;
+    margin-top: 7em;
 }
 
 .navigation-fixed li {
@@ -424,11 +440,11 @@ ul {
     padding-top: 3%
 }
 
-.clients-container>div {
+.clients-container > div {
     transform: skewY(5deg);
 }
 
-.clients-container>h1 {
+.clients-container > h1 {
     transform: skewY(5deg);
 }
 
@@ -466,7 +482,7 @@ ul {
     width: 100%;
     background-color: #100B61;
     transform: skewY(-5deg);
-    top: -12%;
+    top: -60%;
     left: 0;
     z-index: -10;
 }
@@ -531,7 +547,7 @@ ul {
     width: 100%;
     background-color: #100B61;
     transform: skewY(-5deg);
-    top: -20%;
+    top: -60%;
     left: 0;
     z-index: -10;
 }
@@ -637,9 +653,19 @@ form button[type=submit] {
     color: #F26522;
 }
 
+.page-title p{
+    color: black;
+    text-align: center;
+}
+
+.page-title{
+    margin-bottom: 100%;
+}
 
 /*------------------Services Page Styles-----------------*/
+
 /* global styles */
+<<<<<<< HEAD
 .service-nav-header{
     background-color:#244381;
 }
@@ -659,66 +685,111 @@ form button[type=submit] {
 .service-wrapper img{
     width:80%;
     max-width:600px;
+=======
+
+.wrapper {
+    width: 100%;
+    text-align: center;
 }
 
-.services-btn{
+h2 {
+    padding: 2%;
+    font-size: 2em;
+}
+
+p {
+    width: 100%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    width: 80%;
+    max-width: 800px;
+>>>>>>> 871504dc05201df4d12957511dd48245875458cb
+}
+
+.services-btn {
     margin-top: 2%;
 }
 
 /* Google tour section */
+
 .google-container p {
-    padding-top:3%;
-}
-.google-container p:first-of-type {
-    padding-bottom:3%;
+    padding-top: 3%;
 }
 
-.virtual-tour-box{
-    width:80%;
-    margin:auto;
+.google-container p:first-of-type {
+    padding-bottom: 3%;
 }
+
+.virtual-tour-box {
+    width: 80%;
+    margin: auto;
+}
+<<<<<<< HEAD
 .virtual-tour-box img{
     width:80%;
     max-width:600px;
     border:4px solid black;
+=======
+
+.virtual-tour-box img {
+    width: 80%;
+    max-width: 800px;
+>>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
-.google-cert{
-    max-width:400px;
-    margin:auto;
+
+.google-cert {
+    max-width: 400px;
+    margin: auto;
 }
 
 /* Video section  */
-.video-container{
-    background-color:#100B61;
+
+.video-container {
+    background-color: #100B61;
     transform: skewY(-3deg);
+<<<<<<< HEAD
+=======
+    margin: 6%;
+>>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
-.video-wrapper{
+
+.video-wrapper {
     transform: skewY(3deg);
 }
-.video-box{
-    width:80%;
-    max-width:800px;
-    margin:auto;
+
+.video-box {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
 }
-.video-wrapper h2{
-    color:white;
-    padding-top:8%;
+
+.video-wrapper h2 {
+    color: white;
+    padding-top: 8%;
 }
+
 .video-wrapper p {
-    color:white;
-    padding-top:3%;
+    color: white;
+    padding-top: 3%;
 }
-.video-wrapper p:last-of-type{
-    padding-bottom:6%;
+
+.video-wrapper p:last-of-type {
+    padding-bottom: 6%;
 }
-.video-container .video-iframe{
-    width:80%;
+
+.video-container .video-iframe {
+    width: 80%;
 }
 
 /* Social Media section */
-.social-media-wrapper p{
-    padding:6% 0;
+
+.social-media-wrapper p {
+    padding: 6% 0;
 }
+<<<<<<< HEAD
 .service-wrapper .social-media-box{
     width:80%;
     margin:auto;
@@ -727,72 +798,110 @@ form button[type=submit] {
     width:80%;
     max-width: 600px;
     border:4px solid black;
+=======
+
+.social-media-box {
+    margin: auto;
+}
+
+.social-media-box img {
+    width: 80%;
+    max-width: 800px;
+>>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
 
 /* Seo Section */
-.seo-container{
+
+.seo-container {
     background-color: #244381;
     transform: skewY(-3deg);
+<<<<<<< HEAD
+=======
+    margin: 6%;
+>>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
-.seo-wrapper{
+
+.seo-wrapper {
     transform: skewY(3deg);
 }
 
-.seo-container h2{
-    color:white;
+.seo-container h2 {
+    color: white;
     font-size: 2em;
-    padding-top:8%;
+    padding-top: 8%;
 }
-.seo-img-box{
-    width:80%;
-    margin:auto;
+
+.seo-img-box {
+    width: 80%;
+    margin: auto;
     text-align: center;
 }
 
-.seo-img-box img{
+.seo-img-box img {
     width: 80%;
+<<<<<<< HEAD
     max-width: 600px;
     margin:auto;
     border:4px solid black;
     
+=======
+    max-width: 800px;
+    margin: auto;
+
+>>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
-.seo-container p{
-    font-family: 'Lato',sans-serif;
-    color:white;
-    padding-top:3%;
-    padding-bottom:6%;
+
+.seo-container p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 6%;
 }
+
 /* Web Development Section */
-.web-development-container{
-    width:100%;
+
+.web-development-container {
+    width: 100%;
 }
+<<<<<<< HEAD
 .service-wrapper .web-dev-box{
     width:80%;
     max-width:800px;
     margin:auto;
+=======
+
+.web-dev-box {
+    max-width: 800px;
+    margin: auto;
+>>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
-.web-development-container p{
-    padding:6% 0;
+
+.web-development-container p {
+    padding: 6% 0;
 }
-.line{
-    height:2px;
-    width:80%;
-    margin:auto;
-    background-color:#F26522;
+
+.line {
+    height: 2px;
+    width: 80%;
+    margin: auto;
+    background-color: #F26522;
 }
 
 /* Graphic Design Section */
-.graphic-design-container{
-    background-color:#333192;
-    color:white;
+
+.graphic-design-container {
+    background-color: #333192;
+    color: white;
     transform-origin: top left;
-    transform: skewY(3deg);
+    transform: skewY(-5deg);
     position: relative;
-    top:0;
-    z-index:10;
-    width:100%;
-    height:100%;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    margin-top: 5%;
+    height: 100%;
 }
+<<<<<<< HEAD
 .graphic-design-container::after{
     content:"";
     width:inherit;
@@ -805,20 +914,31 @@ form button[type=submit] {
 .graphic-design-wrapper{
     transform:skewY(-3deg);
     padding:6% 0;
+=======
+
+.graphic-design-wrapper {
+    transform: skewY(5deg);
+    padding: 6% 0;
+>>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
-.graphic-img-box{
-    width:80%;
-    margin:auto;
+
+.graphic-img-box {
+    width: 80%;
+    margin: auto;
 }
-.graphic-img-box img{
-    border:4px solid black;
+
+.graphic-img-box img {
+    border: 4px solid black;
 }
+
 .graphic-design-wrapper p {
-    padding:6% 0 0;
+    padding: 6% 0 0;
 }
-.graphic-design-wrapper p:last-of-type{
-    padding-top:4%;
+
+.graphic-design-wrapper p:last-of-type {
+    padding-top: 4%;
 }
+<<<<<<< HEAD
 /* Services Contact Section */
 .service-contact-section {
     padding:30px;
@@ -849,6 +969,22 @@ form button[type=submit] {
 }
 
 
+=======
+
+/* .graphic-design-container::after{ */
+
+content:'';
+display:block;
+position: absolute;
+bottom:0;
+left:0;
+background-color:green;
+z-index:-100;
+width:100%;
+height:100%;
+}
+
+>>>>>>> 871504dc05201df4d12957511dd48245875458cb
 /*------------------Contact Page Styles-----------------*/
 
 #contact-page-form {
@@ -1095,5 +1231,8 @@ form button[type=submit] {
     header {
         display: flex !important;
         justify-content: space-between;
+    }
+    .page-title{
+        margin-bottom: 35%;
     }
 }
