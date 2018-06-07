@@ -8,8 +8,8 @@
     <meta name="description" content="This is my best website ever!">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Lato" rel="stylesheet">
-    <link rel="stylesheet" href="https://clickitsocial.com/wp-content/themes/clickitsocial-main/styles/style.css">
-    <link rel="stylesheet" href="https://clickitsocial.com/wp-content/themes/clickitsocial-main/styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 </head>
 
 <body>
@@ -152,24 +152,42 @@
         <!--Some of our Clients -->
         <div class="clients-container">
             <h1>Some Of Our Clients</h1>
-            <div class="client-box-container">
-                <div class="client-box">
+            <div id="slider" class="client-box-container">
+              <div class="slide"> <!--slide 1-->
+                <div class="client-box slides">
                     <div class="client-logo">
-                        <img src="https://clickitsocial.com/wp-content/themes/clickitsocial-main/images/sky-zone-thumb.png" alt="">
+                        <img src="/images/dophin-bay.png" alt="">
                     </div>
                 </div>
-                <div class="client-box">
+                <div class="client-box slides">
                     <div class="client-logo">
-                        <img src="https://clickitsocial.com/wp-content/themes/clickitsocial-main/images/rrsbbq-logo.png" alt="">
+                        <img src="/images/rrsbbq-logo.png" alt="">
                     </div>
                 </div>
-                <div class="client-box">
+                <div class="client-box slides">
                     <div class="client-logo">
-                        <img src="https://clickitsocial.com/wp-content/themes/clickitsocial-main/images/hotrod-logo.png" alt="">
+                        <img src="/images/hotrod-logo.png" alt="">
                     </div>
                 </div>
-            </div>
+              <!-- end slide 1-- <!-- slide 2-->
+                <div class="client-box slides">
+                    <div class="client-logo">
+                        <img src="/images/xtreme.png" alt="">
+                    </div>
+                </div>
+                <div class="client-box slides">
+                    <div class="client-logo">
+                        <img src="/images/paymon.png" alt="">
+                    </div>
+                </div>
+                <div class="client-box slides">
+                    <div class="client-logo">
+                        <img src="/images/NTM.jpg" alt="">
+                    </div>
+                </div> <!-- end slide 2-->
+            </div> 
         </div>
+    </div>
 
 
     </main>
@@ -271,7 +289,11 @@
             </ul>
         </div>
     </footer>
-    <script src="https://clickitsocial.com/wp-content/themes/clickitsocial-main/scripts/script.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

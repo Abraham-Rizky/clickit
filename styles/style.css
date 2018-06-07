@@ -17,14 +17,14 @@ Updated: 2017-11-23 00:13:20
     font-family: 'Bitter', serif;
 }
 
-#service-footer{
-    margin:0;
+#service-footer {
+    margin: 0;
     position: relative;
-    z-index:200;
-
+    z-index: 200;
 }
-#service-footer ul{
-    padding:5px;
+
+#service-footer ul {
+    padding: 5px;
 }
 
 ul {
@@ -422,10 +422,10 @@ ul {
 
 /*--------------Some Of Our Clients------------------*/
 
-.clients-box {
+/* .clients-box {
     display: grid;
     grid-template-rows: 1fr 2fr;
-}
+} */
 
 .clients-container {
     position: relative;
@@ -440,11 +440,11 @@ ul {
     padding-top: 3%
 }
 
-.clients-container > div {
+.clients-container>div {
     transform: skewY(5deg);
 }
 
-.clients-container > h1 {
+.clients-container>h1 {
     transform: skewY(5deg);
 }
 
@@ -653,60 +653,42 @@ form button[type=submit] {
     color: #F26522;
 }
 
-.page-title p{
+.page-title p {
     color: black;
     text-align: center;
 }
 
-.page-title{
+.page-title {
     margin-bottom: 100%;
 }
 
 /*------------------Services Page Styles-----------------*/
 
 /* global styles */
-<<<<<<< HEAD
-.service-nav-header{
-    background-color:#244381;
-}
-.service-wrapper{
-    width:100%;
-    text-align: center;
-}
-.service-wrapper h2{
-    padding:2%;
-    font-size:2em;
-}
-.service-wrapper p{
-    width:80%;
-    margin:auto;
-    font-family: 'Lato',sans-serif;
-}
-.service-wrapper img{
-    width:80%;
-    max-width:600px;
-=======
 
-.wrapper {
+.service-nav-header {
+    background-color: #244381;
+}
+
+.service-wrapper {
     width: 100%;
     text-align: center;
 }
 
-h2 {
+.service-wrapper h2 {
     padding: 2%;
     font-size: 2em;
 }
 
-p {
-    width: 100%;
+.service-wrapper p {
+    width: 80%;
     margin: auto;
     font-family: 'Lato', sans-serif;
 }
 
-img {
+.service-wrapper img {
     width: 80%;
-    max-width: 800px;
->>>>>>> 871504dc05201df4d12957511dd48245875458cb
+    max-width: 600px;
 }
 
 .services-btn {
@@ -727,17 +709,11 @@ img {
     width: 80%;
     margin: auto;
 }
-<<<<<<< HEAD
-.virtual-tour-box img{
-    width:80%;
-    max-width:600px;
-    border:4px solid black;
-=======
 
 .virtual-tour-box img {
     width: 80%;
-    max-width: 800px;
->>>>>>> 871504dc05201df4d12957511dd48245875458cb
+    max-width: 600px;
+    border: 4px solid black;
 }
 
 .google-cert {
@@ -750,10 +726,6 @@ img {
 .video-container {
     background-color: #100B61;
     transform: skewY(-3deg);
-<<<<<<< HEAD
-=======
-    margin: 6%;
->>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
 
 .video-wrapper {
@@ -789,25 +761,16 @@ img {
 .social-media-wrapper p {
     padding: 6% 0;
 }
-<<<<<<< HEAD
-.service-wrapper .social-media-box{
-    width:80%;
-    margin:auto;
-}
-.service-wrapper .social-media-box img{
-    width:80%;
-    max-width: 600px;
-    border:4px solid black;
-=======
 
-.social-media-box {
+.service-wrapper .social-media-box {
+    width: 80%;
     margin: auto;
 }
 
-.social-media-box img {
+.service-wrapper .social-media-box img {
     width: 80%;
-    max-width: 800px;
->>>>>>> 871504dc05201df4d12957511dd48245875458cb
+    max-width: 600px;
+    border: 4px solid black;
 }
 
 /* Seo Section */
@@ -815,10 +778,6 @@ img {
 .seo-container {
     background-color: #244381;
     transform: skewY(-3deg);
-<<<<<<< HEAD
-=======
-    margin: 6%;
->>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
 
 .seo-wrapper {
@@ -839,16 +798,9 @@ img {
 
 .seo-img-box img {
     width: 80%;
-<<<<<<< HEAD
     max-width: 600px;
-    margin:auto;
-    border:4px solid black;
-    
-=======
-    max-width: 800px;
     margin: auto;
-
->>>>>>> 871504dc05201df4d12957511dd48245875458cb
+    border: 4px solid black;
 }
 
 .seo-container p {
@@ -863,17 +815,11 @@ img {
 .web-development-container {
     width: 100%;
 }
-<<<<<<< HEAD
-.service-wrapper .web-dev-box{
-    width:80%;
-    max-width:800px;
-    margin:auto;
-=======
 
-.web-dev-box {
+.service-wrapper .web-dev-box {
+    width: 80%;
     max-width: 800px;
     margin: auto;
->>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
 
 .web-development-container p {
@@ -901,25 +847,19 @@ img {
     margin-top: 5%;
     height: 100%;
 }
-<<<<<<< HEAD
-.graphic-design-container::after{
-    content:"";
-    width:inherit;
-    height:inherit;
-    position: absolute;
-    bottom:0;
-    left:0;
 
+.graphic-design-container::after {
+    content: "";
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
-.graphic-design-wrapper{
-    transform:skewY(-3deg);
-    padding:6% 0;
-=======
 
 .graphic-design-wrapper {
-    transform: skewY(5deg);
+    transform: skewY(-3deg);
     padding: 6% 0;
->>>>>>> 871504dc05201df4d12957511dd48245875458cb
 }
 
 .graphic-img-box {
@@ -938,53 +878,41 @@ img {
 .graphic-design-wrapper p:last-of-type {
     padding-top: 4%;
 }
-<<<<<<< HEAD
+
 /* Services Contact Section */
+
 .service-contact-section {
-    padding:30px;
-    background-color:white;
+    padding: 30px;
+    background-color: white;
     position: relative;
-    z-index:400;
+    z-index: 400;
 }
-.service-contact-section h1{
-    margin:0;
-    padding:0;
+
+.service-contact-section h1 {
+    margin: 0;
+    padding: 0;
     font-weight: 400;
 }
+
 .service-contact-section .fa-arrow-circle-down {
-    display:block;
-    padding-top:1%;
+    display: block;
+    padding-top: 1%;
 }
+
 .service-contact-section .service-btn {
-    padding:10px;
+    padding: 10px;
     margin-top: 1%;
-    background-color:orange;
-    border:none;
+    background-color: orange;
+    border: none;
     border-radius: 40px;
 }
-.service-contact-section .service-btn:hover{
+
+.service-contact-section .service-btn:hover {
     cursor: pointer;
-    background-color:#ff9b00;
-    border:1px solid black;
+    background-color: #ff9b00;
+    border: 1px solid black;
 }
 
-
-=======
-
-/* .graphic-design-container::after{ */
-
-content:'';
-display:block;
-position: absolute;
-bottom:0;
-left:0;
-background-color:green;
-z-index:-100;
-width:100%;
-height:100%;
-}
-
->>>>>>> 871504dc05201df4d12957511dd48245875458cb
 /*------------------Contact Page Styles-----------------*/
 
 #contact-page-form {
@@ -1023,78 +951,96 @@ height:100%;
     margin: auto;
     padding:4% 1%;
 } */
+
 /* contact page nav */
-.contact-site-nav{
+
+.contact-site-nav {
     background-color: #333192;
 }
-.contact-site-nav ul li a{
-    color:white;
+
+.contact-site-nav ul li a {
+    color: white;
 }
+
 /* Careers page */
-.career-banner{
-    width:100vw;
-    height:100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.9)), url("/images/careers-banner.jpg") no-repeat center fixed;
-    background-size:cover;
+
+.career-banner {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("/images/careers-banner.jpg") no-repeat center fixed;
+    background-size: cover;
 }
-.career-banner{
-    display:flex;
+
+.career-banner {
+    display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
+    position: relative;
 }
-.career-banner .career-banner-text{
-    color:white;
+
+.career-banner .career-banner-text {
+    color: white;
     text-align: center;
 }
-.career-banner .career-banner-text #team-span{
-    display:block;
+
+.career-banner .career-banner-text #team-span {
+    display: block;
 }
-.career-id{
-    position: absolute; 
-    bottom:0;
-    left:50%;
-    color:white;
+
+.career-id {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: white;
     transform: translate(-50%);
-    margin-bottom:2%;
+    margin-bottom: 2%;
 }
-.career-id .career-id-box{
-    margin:auto;
+
+.career-id .career-id-box {
+    margin: auto;
     text-align: center;
-    background-color:rgba(40,41,41,0.5);
+    background-color: rgba(40, 41, 41, 0.5);
     width: 30px;
-    height:30px;
+    height: 30px;
     border-radius: 50%;
 }
-#down-arrow{
-    padding-top:6px;
+
+#down-arrow {
+    padding-top: 6px;
 }
-.career-wrapper{
-    text-align:center;
+
+.career-wrapper {
+    text-align: center;
 }
-.career-line{
-    text-align:center;
+
+.career-line {
+    text-align: center;
 }
-.career-wrapper h1{
-    font-size:2em;
+
+.career-wrapper h1 {
+    font-size: 2em;
 }
-.career-wrapper .career-line{
-    height:4px;
-    width:40%;
-    background:orange;
-    margin:auto;
+
+.career-wrapper .career-line {
+    height: 4px;
+    width: 40%;
+    background: orange;
+    margin: auto;
 }
-#career-btn{
+
+#career-btn {
     display: block;
     background-color: orange;
     border-radius: 3px;
     margin: 7px auto 10px;
 }
-.job-box a{
+
+.job-box a {
     text-decoration: none;
 }
-.career-footer{
-    margin-top:29px;
+
+.career-footer {
+    margin-top: 29px;
 }
 
 /* Only CSS rules that need to be changed to meet the layout needs from MEDIUM to large/wide go in here */
@@ -1159,16 +1105,34 @@ height:100%;
     }
     /*--------------Some of our clients--------------------*/
     .client-box-container {
-        display: flex;
-        flex-flow: row nowrap;
+        /* display: flex; */
+        /* flex-flow: row nowrap;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: flex-start; */
         padding: 0 4%;
     }
-    .client-box p {
-        width: 100%;
-        font-size: 0.9em;
-        padding: 5%;
+    #slider .slide .slides img{
+        width:240px;
+        height:400px;
+    }
+    #slider{
+        width:1335px;
+        height:400px;  
+        overflow:hidden;
+
+    }
+    .slide{
+        display:block;
+        width:3000px;
+        height:400px;
+        padding:0;
+        margin:0;
+    }
+    .slides{
+        float:left;
+        list-style-type: none;
+        height:400px;
+        width:400px;
     }
     /*--------------Contact--------------------*/
     .contact-container {
@@ -1201,27 +1165,25 @@ height:100%;
         width: 95%;
     }
     /* ------------ Services Page----------- */
-    .service-wrapper p{
-        font-size:1.4em;
-        line-height:1.3;
-        
+    .service-wrapper p {
+        font-size: 1.4em;
+        line-height: 1.3;
     }
-
     /* Seo section */
-    .seo-wrapper h2{
-        padding-top:4%;
+    .seo-wrapper h2 {
+        padding-top: 4%;
     }
     /* Graphic design */
-    .graphic-design-wrapper h2{
-        padding:0;
-        margin-top:0;
+    .graphic-design-wrapper h2 {
+        padding: 0;
+        margin-top: 0;
     }
-    .graphic-design-wrapper p:last-of-type{
-        padding-top:1%;
+    .graphic-design-wrapper p:last-of-type {
+        padding-top: 1%;
     }
     /* Contact Page Styles */
-    .inner-form .final-form{
-        width:80%;
+    .inner-form .final-form {
+        width: 80%;
     }
 }
 
@@ -1232,7 +1194,7 @@ height:100%;
         display: flex !important;
         justify-content: space-between;
     }
-    .page-title{
+    .page-title {
         margin-bottom: 35%;
     }
 }
